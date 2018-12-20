@@ -1,0 +1,418 @@
+<form action="/validate/form10validate" method="post" id="Form10" class="needs-validation container_PA" novalidate>
+
+    <script>
+      $("#Form10").submit(function () {
+      if ($("#first_regis1").is(':checked')) {
+        sessionStorage.first_regis = $("#first_regis1").val();
+      } else if ($("#first_regis2").is(':checked')) {
+        sessionStorage.first_regis = $("#first_regis2").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#outside1").is(':checked')) {
+        sessionStorage.outside = $("#outside1").val();
+      } else if ($("#outside2").is(':checked')) {
+        sessionStorage.outside = $("#outside2").val();
+      }
+
+      if ($("#serious_sickness1").is(':checked')) {
+        sessionStorage.serious_sickness = $("#serious_sickness1").val();
+      } else if ($("#serious_sickness2").is(':checked')) {
+        sessionStorage.serious_sickness = $("#serious_sickness2").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#acquain1").is(':checked')) {
+        sessionStorage.acquain = $("#acquain1").val();
+      } else if ($("#acquain2").is(':checked')) {
+        sessionStorage.acquain = $("#acquain2").val();
+      }
+
+      if ($("#prison1").is(':checked')) {
+        sessionStorage.prison = $("#prison1").val();
+      } else if ($("#prison2").is(':checked')) {
+        sessionStorage.prison = $("#prison2").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#my_club1").is(':checked')) {
+        sessionStorage.my_club = $("#my_club1").val();
+      } else if ($("#my_club2").is(':checked')) {
+        sessionStorage.my_club = $("#my_club2").val();
+      }
+    });
+</script>
+
+
+
+    <div id="ribbon"></div>
+    <div class="form-row">
+        <ul class="mcd-menu">
+            <li>
+                <a href="/form1">
+                    <img src="/stylesheets/png/009-one.png" width="25" height="25">
+                    <strong>ประวัติส่วนตัว</strong>
+                    <small>Personal Data</small>
+
+                </a>
+            </li>
+            <li>
+                <a href="/form2">
+                    <img src="/stylesheets/png/008-two.png" width="25" height="25">
+                    <strong>รายละเอียดครอบครัว</strong>
+                    <small>Family Data</small>
+
+                </a>
+            </li>
+            <li>
+                <a href="/form3">
+                    <img src="/stylesheets/png/007-three.png" width="25" height="25">
+                    <strong>ประวัติการศึกษา</strong>
+                    <small>Education</small>
+                </a>
+            </li>
+            <li>
+                <a href="/form4">
+                    <img src="/stylesheets/png/006-four.png" width="25" height="25">
+                    <strong>ประวัติการทำงาน/ประวัตการฝึกอบรม</strong>
+                    <small>Working Experience From Current Onwards</small>
+                </a>
+            </li>
+            <li>
+                <a href="/form5" id="nav-form5">
+                    <img src="/stylesheets/png/005-five.png" width="25" height="25">
+                    <strong>ความสามในการใช้ภาษาต่างประเทศ <br>และคอมพิวเตอร์</strong>
+                    <small>Languages and Computer Ability</small>
+                </a>
+            </li>
+            <li>
+                <a href="/form6" id="nav-form6">
+                    <img src="/stylesheets/png/004-six.png" width="25" height="25">
+                    <strong>บุคคลที่ติดต่อได้โดยไม่ใช่ญาติพี่น้อง/ <br> กรณีเร่งด่วนที่สามารถติดต่อข้าพเจ้าได้</strong>
+                    <small>name of persib not related to application to whom reference may be made/ Emergency Contact
+                    </small>
+                </a>
+            </li>
+            <li>
+                <a href="/form9">
+                    <img src="/stylesheets/png/003-seven.png" width="25" height="25">
+                    <strong>สุขภาพ</strong>
+                    <small>Health</small>
+                </a>
+            </li>
+            <li>
+                <a href="/form10" class="active">
+                    <img src="/stylesheets/png/002-eight.png" width="25" height="25">
+                    <strong>รายละเอียดอื่นๆ</strong>
+                    <small>Other</small>
+                </a>
+            </li>
+
+        </ul>
+        </nav>
+        <fieldset>
+            <h1>รายละเอียดอื่นๆ</h1>
+
+            <div class="form-group">
+                <label>ท่านสมัครงานในบริษัทฯ นี้เป็นครั้งแรกหรือไม่</label>
+                <div class="form-row">
+                    <div class="custom-control custom-radio">
+                        <input id="first_regis1" type="radio" class="custom-control-input first_regis" name="first_regis"
+                            value="ใช่" value="{{ form10.first_regis }}">
+                        <label for="first_regis1" class="custom-control-label">ใช่</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="first_regis2" type="radio" class="custom-control-input first_regis" name="first_regis"
+                            value="ไม่ใช่" value="{{ form10.first_regis }}">
+                        <label for="first_regis2" class="custom-control-label">ไม่ใช่</label>
+                    </div>
+
+                    <div class="first_regis" style="display:none;">
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">เป็นครั้งที่</span>
+                            </div>
+                            <input type="number" name="first_regis3" id="first_regis3" class="form-control"
+                                aria-describedby="basic-addon1" value="{{ form10.first_regis3 }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr class="hr-primary">
+
+            <div class="form-group">
+                <label>ท่านสามารถออกต่างจังหวัด ได้หรือไม่</label>
+                <div class="form-row">
+                    <div class="custom-control custom-radio">
+                        <input id="outside1" type="radio" class="custom-control-input outside" name="outside" value="ได้"
+                            value="{{ form10.outside }}">
+                        <label for="outside1" class="custom-control-label">ได้</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="outside2" class="custom-control-input outside" name="outside" type="radio" value="ไม่ได้"
+                            value="{{ form10.outside }}">
+                        <label for="outside2" class="custom-control-label">ไม่ได้</label>
+                    </div>
+
+
+                    <div class="outside" style="display:none;">
+                        <div class="input-group mb-4">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">เพราะ</span>
+                            </div>
+                            <input type="number" name="outside3" id="outside3" class="form-control" aria-describedby="basic-addon1"
+                                value="{{ form10.outside3 }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-primary">
+
+            <div class="form-group">
+                <label>ท่านมีญาติ หรือเพื่อนในบริษัทฯนี้หรือไม่</label>
+                <div class="form-row">
+                    <div class="custom-control custom-radio">
+                        <input id="acquain1" type="radio" class="custom-control-input acquain" name="acquain" value="มี"
+                            value="{{ form10.acquain }}">
+                        <label for="acquain1" class="custom-control-label">มี</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="acquain2" class="custom-control-input acquain" name="acquain" type="radio" value="ไม่มี"
+                            value="{{ form10.acquain }}">
+                        <label for="acquain2" class="custom-control-label">ไม่มี</label>
+                    </div>
+                </div>
+
+                <div class="acquain" style="display:none;">
+                    <div class="form-row">
+                        <div class="col-3">
+                            <label>ชื่อ-นามสกุล</label>
+                            <input type="text" name="acquain_name" id="acquain_name" class="form-control" value="{{ form10.acquain_name }}">
+                        </div>
+                        <div class="col-3">
+                            <label>ความสัมพันธ์ </label>
+                            <div class="form-holder">
+                                <input type="text" name="acquain_rela" id="acquain_rela" class="form-control" value="{{ form10.acquain_rela }}">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <label>หน่วยงาน </label>
+                            <div class="form-holder">
+                                <input type="text" name="acquain_depart" id="acquain_depart" class="form-control" value="{{ form10.acquain_depart }}">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-row">
+                        <div class="col-3">
+                            <label>ชื่อ-นามสกุล</label>
+                            <input type="text" name="acquain_name2" id="acquain_name2" class="form-control" value="{{ form10.acquain_name2 }}">
+                        </div>
+                        <div class="col-3">
+                            <label>ความสัมพันธ์ </label>
+                            <div class="form-holder">
+                                <input type="text" name="acquain_rela2" id="acquain_rela2" class="form-control" value="{{ form10.acquain_rela2 }}">
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <label>หน่วยงาน </label>
+                            <div class="form-holder">
+                                <input type="text" name="acquain_depart2" id="acquain_depart2" class="form-control"
+                                    value="{{ form10.acquain_depart2 }}">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-primary">
+
+            <div class="form-group">
+                <label>ท่านเคยถูกจำคุกหรือต้องคำพิพากษาถึงที่สุดในคดีอาญาหรือไม่</label>
+                <div class="form-row">
+                    <div class="custom-control custom-radio">
+                        <input id="prison1" type="radio" class="custom-control-input prison" name="prison" value="เคย"
+                            value="{{ form10.prison }}">
+                        <label for="prison1" class="custom-control-label">เคย</label>
+                    </div>
+
+                    <div class="custom-control custom-radio">
+                        <input id="prison2" class="custom-control-input prison" name="prison" type="radio" value="ไม่เคย"
+                            value="{{ form10.prison }}">
+                        <label for="prison2" class="custom-control-label">ไม่เคย</label>
+                    </div>
+
+                    <div class="prison" style="display:none;">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">เนื่องจาก</span>
+                            </div>
+                            <input type="text" name="prison3" id="prison3" class="form-control" value="{{ form10.prison3 }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr class="hr-primary">
+
+            <div class="form-group">
+                <label>ปัจจุบันท่านเป็นสมาชิกชมรมหรือสมาคมหรือไม่</label>
+                <div class="form-row">
+                    <div class="custom-control custom-radio">
+                        <input id="my_club1" type="radio" class="custom-control-input my_club" name="my_club" value="เป็น"
+                            value="{{ form10.my_club }}">
+                        <label for="my_club1" class="custom-control-label">เป็น</label>
+                    </div>
+                    <div class="custom-control custom-radio">
+                        <input id="my_club2" class="custom-control-input my_club" name="my_club" type="radio" value="ไม่เป็น"
+                            value="{{ form10.my_club }}">
+                        <label for="my_club2" class="custom-control-label">ไม่เป็น</label>
+                    </div>
+
+                    <div class="my_club" style="display:none;">
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">ชมรม/สมาคม</span>
+                            </div>
+                            <input type="text" name="my_club3" id="my_club3" class="form-control" value="{{ form10.my_club3 }}">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <hr class="hr-primary">
+
+            <div class="fieldset-content">
+                <div class="table100 ver5 m-b-110">
+                    <table data-vertable="ver5">
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="column100 column1" id="column1" data-column="column1">สวัสดิการอื่นจากทีทำงานปัจจุบันล่าสุดต่อเดือน</th>
+                                <th class="column100 column2" data-column="column2"></th>
+
+                            </tr>
+                        </thead>
+
+                        <tbody>
+
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">เงินโบนัส</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input name="my_bonus" id="my_bonus" type="number" class="column100 column2 form-control col-3"
+                                            data-column="column2" value="{{ form10.my_bonus }}">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2">บาท</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">เงินกองทุนสำรองเลี้ยงชีพ</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input name="my_reserve" id="my_reserve" type="number" class="column100 column2 form-control col-3"
+                                            data-column="column2" value="{{ form10.my_reserve }}">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2">บาท</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">ค่ารักษาพยาบาล</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input name="my_medical" id="my_medical" type="number" class="column100 column2 form-control col-3"
+                                            data-column="column2" value="{{ form10.my_medical }}">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2">บาท</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">ประกันชีวิต</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input name="Life_insurance" id="Life_insurance" type="number" class="column100 column2 form-control col-3"
+                                            data-column="column2" value="{{ form10.Life_insurance }}">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2">บาท</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">ค่าตำแหน่ง</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input name="Position_value" id="Position_value" type="number" class="column100 column2 form-control col-3"
+                                            data-column="column2" value="{{ form10.Position_value }}">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2">บาท</span>
+                                        </div>
+                                    </div>
+                                </td>
+
+                            </tr>
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">ค่าพาหนะ</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input name="traveling_expen" id="traveling_expen" type="number" class="column100 column2 form-control col-3"
+                                            data-column="column2" value="{{ form10.traveling_expen }}">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2">บาท</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">ค่าครองชีพ/เบี้ยขยัน</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input name="diligence" id="diligence" type="number" class="column100 column2 form-control col-3"
+                                            data-column="column2" value="{{ form10.diligence }}">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2">บาท</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+
+                            <tr class="row100">
+                                <td class="column100 column1" data-column="column1">เงินช่วยเหลือ/อื่นๆ</td>
+                                <td>
+                                    <div class="input-group">
+                                        <input name="Subsidy" id="Subsidy" type="number" class="column100 column2 form-control col-3"
+                                            data-column="column2" value="{{ form10.Subsidy }}">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text" id="basic-addon2">บาท</span>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                    </table>
+                </div>
+            </div>
+
+            <p>
+                <input type="submit">
+            </p>
+        </fieldset>
+    </div>
+</form>

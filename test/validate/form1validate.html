@@ -1,0 +1,909 @@
+<form action="/validate/form1validate" method="post" id="Form1" class="needs-validation container_PA" novalidate>
+
+  <script>
+    $("#Form1").submit(function(){
+         sessionStorage.my_title = $("#my_title").val();
+         sessionStorage.my_religion = $("#my_religion").val();
+         sessionStorage.my_blood_group = $("#my_blood_group").val();	
+         sessionStorage.parent_house = $("#parent_house").val();
+          sessionStorage.my_marrital_status = $("#my_marrital_status").val();	
+       }); 
+
+</script>
+
+  <script>
+
+    $(document).ready(function () {
+      
+	  var my_title = sessionStorage.getItem('my_title');
+	  if(my_title == 'นาย') {
+		$("#male").attr('selected', 'selected');
+     $('.box').show();
+	  }
+    else if(my_title == 'นาง'){
+		$("#female").attr('selected', 'selected');
+	  }
+    else if(my_title == 'นางสาว') {
+      $("#other").attr('selected', 'selected');
+    }
+
+//==============================================================
+
+    var my_blood_group = sessionStorage.getItem('my_blood_group');
+    if( my_blood_group == 'กรุ๊ป O'){
+      $("#groupO").attr('selected','selected');
+    }
+    else if(my_blood_group == 'กรุ๊ป A'){
+    $("#groupA").attr('selected','selected');
+    }
+    else if(my_blood_group == 'กรุ๊ป B'){
+    $("#groupB").attr('selected','selected');
+    }
+    else if (my_blood_group == 'กรุ๊ป AB'){
+      $("#groupAB").attr('selected','selected');
+    }
+
+//========================================================================
+
+    var my_religion = sessionStorage.getItem('my_religion');
+   if( my_religion == 'ไม่มีศาสนา'){
+      $("#no_religion").attr('selected','selected');
+    }
+    else if(my_religion == 'ศาสนาคริสต์'){
+    $("#christian").attr('selected','selected');
+    }
+    else if(my_religion == 'ศาสนาอิสลาม'){
+    $("#islam").attr('selected','selected');
+    }
+    else if (my_religion == 'ศาสนาพราหมณ์-ฮินดู'){
+      $("#brahmanism").attr('selected','selected');
+    }
+    else if(my_religion == 'ศาสนาพุทธ'){
+    $("#budha").attr('selected','selected');
+    }
+    else if(my_religion == 'ศาสนาซิกข์'){
+    $("#sikhism").attr('selected','selected');
+    }
+    else if (my_religion == 'อื่นๆ'){
+      $("#other_religion").attr('selected','selected');
+    }
+
+//========================================================================
+
+     var my_religion = sessionStorage.getItem('my_religion');
+   if( my_religion == 'ไม่มีศาสนา'){
+      $("#no_religion").attr('selected','selected');
+    }
+    else if(my_religion == 'ศาสนาคริสต์'){
+    $("#christian").attr('selected','selected');
+    }
+    else if(my_religion == 'ศาสนาอิสลาม'){
+    $("#islam").attr('selected','selected');
+    }
+    else if (my_religion == 'ศาสนาพราหมณ์-ฮินดู'){
+      $("#brahmanism").attr('selected','selected');
+    }
+    else if(my_religion == 'ศาสนาพุทธ'){
+    $("#budha").attr('selected','selected');
+    }
+    else if(my_religion == 'ศาสนาซิกข์'){
+    $("#sikhism").attr('selected','selected');
+    }
+    else if (my_religion == 'อื่นๆ'){
+      $("#other_religion").attr('selected','selected');
+    }
+
+//========================================================================
+
+     var parent_house = sessionStorage.getItem('parent_house');
+   if( parent_house == 'ของญาติ'){
+      $("#my_relative").attr('selected','selected');
+    }
+    else if(parent_house == 'หอพัก'){
+    $("#my_apartment").attr('selected','selected');
+    }
+    else if(parent_house == 'ของคนรู้จัก'){
+    $("#my_acquaint").attr('selected','selected');
+    }
+    else if (parent_house == 'อาศัยผู้อื่น'){
+      $("#my_friend").attr('selected','selected');
+      $('.parent_house').show();
+    }
+    else if(parent_house == 'ตนเอง'){
+    $("#my_home").attr('selected','selected');
+    }
+
+//========================================================================
+
+   var my_marrital_status = sessionStorage.getItem('my_marrital_status');
+   if( my_marrital_status == 'สมรส'){
+      $("#married").attr('selected','selected');
+       $('.my_marrital_status').show();
+    }
+    else if(my_marrital_status == 'หย่า'){
+    $("#divorced").attr('selected','selected');
+    }
+    else if(my_marrital_status == 'แยกกันอยู่'){
+    $("#seperated").attr('selected','selected');
+    }
+    else if (my_marrital_status == 'หม้าย'){
+      $("#widowed").attr('selected','selected');
+    }
+    else if(my_marrital_status == 'โสด'){
+    $("#single").attr('selected','selected');
+    }
+    
+    
+
+    });
+</script>
+
+
+
+  <div id="ribbon"></div>
+  <div class="form-row">
+    <ul class="mcd-menu">
+      <li>
+        <a href="/form1" class="active">
+          <img src="/stylesheets/png/009-one.png" width="25" height="25">
+          <strong>ประวัติส่วนตัว</strong>
+          <small>Personal Data</small>
+
+        </a>
+      </li>
+      <li>
+        <a href="/form2">
+          <img src="/stylesheets/png/008-two.png" width="25" height="25">
+          <strong>รายละเอียดครอบครัว</strong>
+          <small>Family Data</small>
+
+        </a>
+      </li>
+      <li>
+        <a href="/form3">
+          <img src="/stylesheets/png/007-three.png" width="25" height="25">
+          <strong>ประวัติการศึกษา</strong>
+          <small>Education</small>
+        </a>
+      </li>
+      <li>
+        <a href="/form4">
+          <img src="/stylesheets/png/006-four.png" width="25" height="25">
+          <strong>ประวัติการทำงาน/ประวัตการฝึกอบรม</strong>
+          <small>Working Experience From Current Onwards</small>
+        </a>
+      </li>
+      <li>
+        <a href="/form5" id="nav-form5">
+          <img src="/stylesheets/png/005-five.png" width="25" height="25">
+          <strong>ความสามในการใช้ภาษาต่างประเทศ <br>และคอมพิวเตอร์</strong>
+          <small>Languages and Computer Ability</small>
+        </a>
+      </li>
+      <li>
+        <a href="/form6" id="nav-form6">
+          <img src="/stylesheets/png/004-six.png" width="25" height="25">
+          <strong>บุคคลที่ติดต่อได้โดยไม่ใช่ญาติพี่น้อง/ <br> กรณีเร่งด่วนที่สามารถติดต่อข้าพเจ้าได้</strong>
+          <small>name of persib not related to application to whom reference may be made/ Emergency Contact </small>
+        </a>
+      </li>
+      <li>
+        <a href="/form9">
+          <img src="/stylesheets/png/003-seven.png" width="25" height="25">
+          <strong>สุขภาพ</strong>
+          <small>Health</small>
+        </a>
+      </li>
+      <li>
+        <a href="/form10">
+          <img src="/stylesheets/png/002-eight.png" width="25" height="25">
+          <strong>รายละเอียดอื่นๆ</strong>
+          <small>Other</small>
+        </a>
+      </li>
+
+    </ul>
+    </nav>
+
+
+    <fieldset>
+
+      <div class="table100 ver5 m-b-110" id="head">
+        <table data-vertable="ver5">
+          <thead>
+            <tr class="row100 head">
+              <th class="column100 column1" data-column="column1">ประวัติส่วนตัว</th>
+            </tr>
+          </thead>
+        </table>
+      </div>
+
+
+      <div class="form-row">
+        <div class="col-sm-6">
+          <label>ทราบข่าวการสมัครจาก</label>
+          <input type="text" name="news" id="news" class="form-control" value="{{ form1.news }}">
+        </div>
+        <div class="col-sm-3">
+          <label>วันที่สมัคร</label>
+          <input type="date" name="my_date_regis" id="my_date_regis" class="form-control" value="{{ form1.my_date_regis }}">
+        </div>
+      </div>
+
+
+      <div class="form-row">
+        <div class="col-6">
+          <label>สมัครตำแหน่ง</label>
+          <div class="form-row">
+            <div class="col-sm-6">
+              <input type="text" name="position1" id="position1" class="form-control" value="{{ form1.position1 }}"
+                placeholder="ตำแหน่งที่1">
+            </div>
+            <div class="col-sm-6">
+              <input type="text" name="position2" id="position2" class="form-control" value="{{ form1.position2 }}"
+                placeholder="ตำแหน่งที่2">
+            </div>
+          </div>
+        </div>
+
+
+
+        <div class="col-3">
+          <label>วันที่พร้อมทำงาน</label>
+          <input type="date" name="my_date_readywork" id="my_date_readywork" class="form-control" value="{{ form1.my_date_readywork }}">
+        </div>
+
+        <div class="col-3">
+          <label>อัตราเงินเดือนที่คาดหวัง</label>
+          <div class="input-group">
+            <input type="number" name="my_salary_want" id="my_salary_want" class="form-control" value="{{ form1.my_salary_want }}">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">บาท</span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-primary">
+
+      <div class="form-row">
+        <div class="col-sm-3 ">
+          <label>คำนำหน้าชื่อ</label>
+          <select class="custom-select" id="my_title" name="my_title" value="{{ form1.my_title }}">
+            <option selected disabled>-- กรุณาเลือก --</option>
+            <option id="male" value="นาย">นาย</option>
+            <option id="female" value="นาง">นาง</option>
+            <option id="other" value="นางสาว">นางสาว</option>
+          </select>
+        </div>
+
+        <div class="col-sm-3">
+          <label>ชื่อ</label>
+          <input type="text" class="form-control" } id="my_Fname" name="my_Fname" required value="{{ form1.my_Fname }}">
+          <div class="invalid-tooltip">
+            Please choose a username.
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <label>นามสกุล</label>
+          <input type="text" name="my_Lname" id="my_Lname" class="form-control" value="{{ form1.my_Lname }}">
+        </div>
+      </div>
+
+      <div class="box" style=" display: none;">
+
+        <label>ท่านเคยผ่านการเกณฑ์ทหารหรือไม่</label>
+        <div class="form-row">
+          <div class="custom-control custom-radio">
+            <input id="soldier1" class="custom-control-input" name="radio14" type="radio" onclick="show5();">
+            <label class="custom-control-label" for="soldier1" value=value="เคย">เคย</label>
+          </div>
+          <div class="custom-control custom-radio">
+            <input id="soldier2" class="custom-control-input" name="radio14" type="radio" onclick="show6();">
+            <label class="custom-control-label" for="soldier2" value="ไม่เคย">ไม่เคย</label>
+          </div>
+        </div>
+
+
+        <!-----------คำถาม การเกณฑ์ทหาร-------------------->
+        <div id="div5" class="hide">
+          <div class="form-row">
+            <div class="col-3">
+              <label>รับราชการทหารแล้ว สังกัด</label>
+              <input type="text" name="sol_affilia" id="sol_affilia" class="form-control " placeholder="ex:มณฑลทหารบกที่ 23 ค่ายศรีพัชรินทร"
+                value="{{ form1.sol_affilia }} ">
+            </div>
+            <div class="col-3">
+              <label>จังหวัด </label>
+              <select class="custom-select btn-outline-primar" name="sol_where" id="sol_where" value="{{ form1.sol_where }}">
+                <option value="" selected>--------- เลือกจังหวัด ---------</option>
+                <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                <option value="กระบี่">กระบี่ </option>
+                <option value="กาญจนบุรี">กาญจนบุรี </option>
+                <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                <option value="กำแพงเพชร">กำแพงเพชร </option>
+                <option value="ขอนแก่น">ขอนแก่น</option>
+                <option value="จันทบุรี">จันทบุรี</option>
+                <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+                <option value="ชัยนาท">ชัยนาท </option>
+                <option value="ชัยภูมิ">ชัยภูมิ </option>
+                <option value="ชุมพร">ชุมพร </option>
+                <option value="ชลบุรี">ชลบุรี </option>
+                <option value="เชียงใหม่">เชียงใหม่ </option>
+                <option value="เชียงราย">เชียงราย </option>
+                <option value="ตรัง">ตรัง </option>
+                <option value="ตราด">ตราด </option>
+                <option value="ตาก">ตาก </option>
+                <option value="นครนายก">นครนายก </option>
+                <option value="นครปฐม">นครปฐม </option>
+                <option value="นครพนม">นครพนม </option>
+                <option value="นครราชสีมา">นครราชสีมา </option>
+                <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+                <option value="นครสวรรค์">นครสวรรค์ </option>
+                <option value="นราธิวาส">นราธิวาส </option>
+                <option value="น่าน">น่าน </option>
+                <option value="นนทบุรี">นนทบุรี </option>
+                <option value="บึงกาฬ">บึงกาฬ</option>
+                <option value="บุรีรัมย์">บุรีรัมย์</option>
+                <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+                <option value="ปทุมธานี">ปทุมธานี </option>
+                <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+                <option value="ปัตตานี">ปัตตานี </option>
+                <option value="พะเยา">พะเยา </option>
+                <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+                <option value="พังงา">พังงา </option>
+                <option value="พิจิตร">พิจิตร </option>
+                <option value="พิษณุโลก">พิษณุโลก </option>
+                <option value="เพชรบุรี">เพชรบุรี </option>
+                <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+                <option value="แพร่">แพร่ </option>
+                <option value="พัทลุง">พัทลุง </option>
+                <option value="ภูเก็ต">ภูเก็ต </option>
+                <option value="มหาสารคาม">มหาสารคาม </option>
+                <option value="มุกดาหาร">มุกดาหาร </option>
+                <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+                <option value="ยโสธร">ยโสธร </option>
+                <option value="ยะลา">ยะลา </option>
+                <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+                <option value="ระนอง">ระนอง </option>
+                <option value="ระยอง">ระยอง </option>
+                <option value="ราชบุรี">ราชบุรี</option>
+                <option value="ลพบุรี">ลพบุรี </option>
+                <option value="ลำปาง">ลำปาง </option>
+                <option value="ลำพูน">ลำพูน </option>
+                <option value="เลย">เลย </option>
+                <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                <option value="สกลนคร">สกลนคร</option>
+                <option value="สงขลา">สงขลา </option>
+                <option value="สมุทรสาคร">สมุทรสาคร </option>
+                <option value="สมุทรปราการ">สมุทรปราการ </option>
+                <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+                <option value="สระแก้ว">สระแก้ว </option>
+                <option value="สระบุรี">สระบุรี </option>
+                <option value="สิงห์บุรี">สิงห์บุรี </option>
+                <option value="สุโขทัย">สุโขทัย </option>
+                <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+                <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+                <option value="สุรินทร์">สุรินทร์ </option>
+                <option value="สตูล">สตูล </option>
+                <option value="หนองคาย">หนองคาย </option>
+                <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+                <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+                <option value="อุดรธานี">อุดรธานี </option>
+                <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+                <option value="อุทัยธานี">อุทัยธานี </option>
+                <option value="อุบลราชธานี">อุบลราชธานี</option>
+                <option value="อ่างทอง">อ่างทอง </option>
+                <option value="อื่นๆ">อื่นๆ</option>
+              </select>
+            </div>
+
+            <div class="col-3">
+              <label>วันประจำการ </label>
+              <input type="date" name="sol_date" id="sol_date" class="form-control" value="{{ form1.sol_date }}">
+            </div>
+          </div>
+        </div>
+
+        <div id="div6" class="hide">
+          <div class="form-row">
+            <div class="col-3">
+              <label>จะเกณฑ์ทหารในปี</label>
+              <div class="input-group">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">พ.ศ.</span>
+                </div>
+                <input type="number" name="year_drafted" id="year_drafted" class="form-control" placeholder="ex:2561"
+                  value="{{ form1.year_drafted }}">
+              </div>
+            </div>
+            <div class="col-3">
+              <label>ได้รับการยกเว้นเนื่องจาก</label>
+              <input type="text" name="exam_except" id="exam_except" class="form-control" placeholder="ex:รด." value="{{ form1.exam_except }}">
+            </div>
+          </div>
+        </div>
+
+
+        <hr class="hr-primary">
+
+        <div class="form-group">
+          <label>การอุปสมบท</label>
+          <div class="form-row">
+            <div class="custom-control custom-radio">
+              <input id="monkhood1" class="custom-control-input" name="radio27" type="radio" onclick="show28();">
+              <label for="monkhood1" class="custom-control-label" value="อุปสมบทแล้ว">อุปสมบทแล้ว</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="monkhood2" class="custom-control-input" name="radio27" type="radio" onclick="show27();">
+              <label for="monkhood2" class="custom-control-label" value="ยังไม่เคยอุปสมบท">ยังไม่เคยอุปสมบท</label>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+      <hr class="hr-primary">
+
+      <!--=============================================================-->
+
+      <div class="form-row">
+        <div class="col-sm-2">
+          <label>วัน/เดือน/ปี เกิด</label>
+          <input type="date" name="my_birth_date" id="my_birth_date" class="form-control validate[required]" value="{{ form1.my_birth_date }}">
+        </div>
+
+
+        <div class="col-sm-2">
+          <label>อายุ</label>
+          <div class="input-group">
+            <input type="number" name="my_age" id="my_age" aria-describedby="basic-addon2" class="form-control" value="{{ form1.my_age }}">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">ปี</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <label>ส่วนสูง</label>
+          <div class="input-group">
+            <input type="number" name="my_height" id="my_height" aria-describedby="basic-addon2" class="form-control"
+              value="{{ form1.my_height }}">
+
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">ซ.ม.</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-2">
+          <label>น้ำหนัก</label>
+          <div class="input-group">
+            <input type="number" name="my_weight" id="my_weight" aria-describedby="basic-addon2" class="form-control"
+              value="{{ form1.my_weight }}">
+            <div class="input-group-append">
+              <span class="input-group-text" id="basic-addon2">ก.ก.</span>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col-sm-2">
+          <label>หมู่เลือด</label>
+          <div class="select">
+            <select class="custom-select" id="my_blood_group" name="my_blood_group" value="{{ form1.my_blood_group }}">
+              <option selected disabled>-- กรุณาเลือก --</option>
+              <option value="กรุ๊ป O">กรุ๊ป O</option>
+              <option value="กรุ๊ป A">กรุ๊ป A</option>
+              <option value="กรุ๊ป B">กรุ๊ป B</option>
+              <option value="กรุ๊ป AB">กรุ๊ป AB</option>
+            </select>
+          </div>
+        </div>
+      </div>
+
+      <hr class="hr-primary">
+      <!--==========================================================================================================================================-->
+
+      <div class="form-row">
+
+        <div class="col-sm-3">
+          <label>ศาสนา</label>
+          <select class="custom-select" name="my_religion" id="my_religion">
+            <option selected disabled>-- กรุณาเลือก --</option>
+            <option value="ศาสนาคริสต์">ศาสนาคริสต์</option>
+            <option value="ศาสนาอิสลาม">ศาสนาอิสลาม</option>
+            <option value="ศาสนาพราหมณ์-ฮินดู">ศาสนาพราหมณ์-ฮินดู</option>
+            <option value="ศาสนาพุทธ">ศาสนาพุทธ</option>
+            <option value="ศาสนาซิกข์">ศาสนาซิกข์</option>
+            <option value="อื่นๆ">อื่นๆ</option>
+            <option value="ไม่มีศาสนา">ไม่มีศาสนา</option>
+          </select>
+        </div>
+        <div class="col-sm-3">
+          <label>สัญชาติ</label>
+          <div class="select">
+            <select class="custom-select" name="nationality" id="nationality" value="{{ form1.nationality }}">
+
+            </select>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <label>เชื้อชาติ</label>
+          <div class="select">
+            <select class="custom-select" name="race" id="race" class="form-control" value="{{ form1.race }}">
+
+            </select>
+          </div>
+        </div>
+
+        <div class="col-sm-3">
+          <label>ตำหนิที่เห็นได้ชัดเจน</label>
+          <input type="text" name="my_scar" id="my_scar" class="form-control" value="{{ form1.my_scar }}" placeholder="ตย. : ลายสักที่แขน">
+        </div>
+      </div>
+
+      <hr class="hr-primary">
+
+      <!--=================================================================-->
+
+      <div class="form-row">
+        <div class="col-sm-3">
+          <label>หมายเลขบัตรประจำตัวประชาชน</label>
+          <input type="text" name="my_ID_card" id="my_ID_card" class="form-control" value="{{ form1.my_ID_card }}"
+            placeholder="ex:1409900020040">
+        </div>
+        <div class="col-sm-3">
+          <label>วันออกบัตร</label>
+          <input type="date" name="my_expried_date" id="my_expried_date" class="form-control" value="{{ form1.my_expried_date }}">
+        </div>
+        <div class="col-sm-3">
+          <label>วันหมดอายุ</label>
+          <input type="date" name="my_expried_date" id="my_expried_date" class="form-control" value="{{ form1.my_expried_date }}">
+        </div>
+        <div class="col-sm-3">
+          <label>ออกให้ ณ อำเภอ</label>
+          <input type="text" name="my_issued_at" id="my_issued_at" class="form-control" value="{{ form1.my_issued_at }}">
+        </div>
+        <div class="col-sm-3">
+          <label>จังหวัด</label>
+          <select class="custom-select btn-outline-primar" name="my_issued_province" id="my_issued_province" value="{{ form1.my_issued_province }}">
+            <option value="" selected>--------- เลือกจังหวัด ---------</option>
+            <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+            <option value="กระบี่">กระบี่ </option>
+            <option value="กาญจนบุรี">กาญจนบุรี </option>
+            <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+            <option value="กำแพงเพชร">กำแพงเพชร </option>
+            <option value="ขอนแก่น">ขอนแก่น</option>
+            <option value="จันทบุรี">จันทบุรี</option>
+            <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+            <option value="ชัยนาท">ชัยนาท </option>
+            <option value="ชัยภูมิ">ชัยภูมิ </option>
+            <option value="ชุมพร">ชุมพร </option>
+            <option value="ชลบุรี">ชลบุรี </option>
+            <option value="เชียงใหม่">เชียงใหม่ </option>
+            <option value="เชียงราย">เชียงราย </option>
+            <option value="ตรัง">ตรัง </option>
+            <option value="ตราด">ตราด </option>
+            <option value="ตาก">ตาก </option>
+            <option value="นครนายก">นครนายก </option>
+            <option value="นครปฐม">นครปฐม </option>
+            <option value="นครพนม">นครพนม </option>
+            <option value="นครราชสีมา">นครราชสีมา </option>
+            <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+            <option value="นครสวรรค์">นครสวรรค์ </option>
+            <option value="นราธิวาส">นราธิวาส </option>
+            <option value="น่าน">น่าน </option>
+            <option value="นนทบุรี">นนทบุรี </option>
+            <option value="บึงกาฬ">บึงกาฬ</option>
+            <option value="บุรีรัมย์">บุรีรัมย์</option>
+            <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+            <option value="ปทุมธานี">ปทุมธานี </option>
+            <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+            <option value="ปัตตานี">ปัตตานี </option>
+            <option value="พะเยา">พะเยา </option>
+            <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+            <option value="พังงา">พังงา </option>
+            <option value="พิจิตร">พิจิตร </option>
+            <option value="พิษณุโลก">พิษณุโลก </option>
+            <option value="เพชรบุรี">เพชรบุรี </option>
+            <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+            <option value="แพร่">แพร่ </option>
+            <option value="พัทลุง">พัทลุง </option>
+            <option value="ภูเก็ต">ภูเก็ต </option>
+            <option value="มหาสารคาม">มหาสารคาม </option>
+            <option value="มุกดาหาร">มุกดาหาร </option>
+            <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+            <option value="ยโสธร">ยโสธร </option>
+            <option value="ยะลา">ยะลา </option>
+            <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+            <option value="ระนอง">ระนอง </option>
+            <option value="ระยอง">ระยอง </option>
+            <option value="ราชบุรี">ราชบุรี</option>
+            <option value="ลพบุรี">ลพบุรี </option>
+            <option value="ลำปาง">ลำปาง </option>
+            <option value="ลำพูน">ลำพูน </option>
+            <option value="เลย">เลย </option>
+            <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+            <option value="สกลนคร">สกลนคร</option>
+            <option value="สงขลา">สงขลา </option>
+            <option value="สมุทรสาคร">สมุทรสาคร </option>
+            <option value="สมุทรปราการ">สมุทรปราการ </option>
+            <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+            <option value="สระแก้ว">สระแก้ว </option>
+            <option value="สระบุรี">สระบุรี </option>
+            <option value="สิงห์บุรี">สิงห์บุรี </option>
+            <option value="สุโขทัย">สุโขทัย </option>
+            <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+            <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+            <option value="สุรินทร์">สุรินทร์ </option>
+            <option value="สตูล">สตูล </option>
+            <option value="หนองคาย">หนองคาย </option>
+            <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+            <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+            <option value="อุดรธานี">อุดรธานี </option>
+            <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+            <option value="อุทัยธานี">อุทัยธานี </option>
+            <option value="อุบลราชธานี">อุบลราชธานี</option>
+            <option value="อ่างทอง">อ่างทอง </option>
+            <option value="อื่นๆ">อื่นๆ</option>
+          </select>
+
+        </div>
+
+      </div>
+      <hr class="hr-primary">
+
+      <!--======================================================================-->
+
+
+      <label>ที่อยู่ตามบัตรประชาชน</label>
+
+      <div class="form-row">
+        <div class="col-3">
+          <label>บ้านเลขที่</label>
+          <input type="text" name="re_house_code" id="re_house_code" class="form-control" value="{{ form1.re_house_code }}">
+        </div>
+        <div class="col-3">
+          <label>หมู่ที่</label>
+          <input type="text" name="re_village_code" id="re_village_code" class="form-control" value="{{ form1.re_village_code }}">
+        </div>
+
+        <div class="col-3">
+          <label>ตรอก/ซอย</label>
+          <input type="text" name="re_village" id="re_village" class="form-control" value="{{ form1.re_village }}">
+        </div>
+        <div class="col-3">
+          <label>ถนน</label>
+          <input type="text" name="re_road" id="re_road" class="form-control" value="{{ form1.re_road }}">
+        </div>
+      </div>
+
+
+
+
+
+      <div class="form-row">
+        <div class="col-3">
+          <label>จังหวัด</label>
+          <select class="province custom-select btn-outline-primar" name="re_province" id="re_province" value="{{ form1.re_province }}"></select>
+        </div>
+
+        <div class="col-3">
+          <label>อำเภอ/เขต</label>
+          <select class="district custom-select btn-outline-primar" name="re_area" id="re_area" value="{{ form1.re_area }}"></select>
+        </div>
+
+        <div class="col-3">
+          <label>ตำบล/แขวง</label>
+          <select class="subdistrict custom-select btn-outline-primar" name="re_sub_district" id="re_sub_district "
+            value="{{ form1.re_sub_district }}"></select>
+        </div>
+
+        <div class="col-3">
+          <label>หมายเลขไปรษณีย์</label>
+          <input type="text" class="form-control zipcode" name="re_postal_code" id="re_postal_code" value="{{ form1.re_postal_code }}">
+        </div>
+      </div>
+
+
+
+      <hr class="hr-primary">
+
+      <!--===============================================================================-->
+
+
+
+
+      <label>ที่อยู่ปัจจุบัน</label>
+
+      <div class="form-row">
+        <div class="col-3">
+          <label>บ้านเลขที่</label>
+          <input type="text" name="pr_house_code" id="pr_house_code" class="form-control" value="{{ form1.pr_house_code }}">
+        </div>
+        <div class="col-3">
+          <label>หมู่ที่</label>
+          <input type="text" name="pr_village_code" id="pr_village_code" class="form-control" value="{{ form1.pr_village_code }}">
+        </div>
+        <div class="col-3">
+          <label>ตรอก/ซอย</label>
+          <input type="text" name="pr_village" id="pr_village" class="form-control" value="{{ form1.pr_village }}">
+        </div>
+        <div class="col-3">
+          <label>ถนน</label>
+          <input type="text" name="pr_road" id="pr_road" class="form-control" value="{{ form1.pr_road }}">
+        </div>
+      </div>
+
+      <div class="form-row">
+        <div class="col-3">
+          <label>จังหวัด</label>
+          <select class="province2 custom-select btn-outline-primar" name="pr_province" id="pr_province" value="{{ form1.pr_province }}"></select>
+        </div>
+
+        <div class="col-3">
+          <label>อำเภอ/เขต</label>
+          <select class="district2 custom-select btn-outline-primar" name="pr_area" id="pr_area" value="{{ form1.pr_area }}"></select>
+        </div>
+
+        <div class="col-3">
+          <label>ตำบล/แขวง</label>
+          <select class="subdistrict2 custom-select btn-outline-primar" name="pr_sub_district" id="pr_sub_district "
+            value="{{ form1.pr_sub_district }}"></select>
+        </div>
+
+        <div class="col-3">
+          <label>หมายเลขไปรษณีย์</label>
+          <input type="text" class="form-control zipcode2" name="pr_postal_code" id="pr_postal_code" value="{{ form1.pr_postal_code }}">
+        </div>
+      </div>
+
+
+      <div class="form-row">
+        <div class="col-sm-3">
+          <label>สถานที่ใกล้เคียงที่เด่นชัด</label>
+          <input type="text" name="posi_neigh" id="posi_neigh" class="form-control" value="{{ form1.posi_neigh }}">
+        </div>
+        <div class="col-sm-3">
+          <label>เบอร์โทรที่สามารถติดต่อได้</label>
+          <input type="text" name="my_tel" id="my_tel" class="form-control" value="{{ form1.my_tel }}">
+        </div>
+      </div>
+
+
+      <label>บ้านที่พักอยู่ในปัจจุบัน</label>
+      <div class="select">
+        <select class="custom-select col-sm-3" id="parent_house" name="parent_house" data-action="toggle" value="{{ form1.parent_house }}">
+          <option selected disabled>-- กรุณาเลือก --</option>
+          <option id="my_home" value="ตนเอง">ตนเอง</option>
+          <option id="my_relative" value="ของญาติ">ของญาติ</option>
+          <option id="my_apartment" value="หอพัก">หอพัก-บ้านเช่า</option>
+          <option id="my_acquaint" value="ของคนรู้จัก">ของคนรู้จัก</option>
+          <option id="my_friend" value="อาศัยผู้อื่น">อาศัยผู้อื่น</option>
+        </select>
+
+        <div class="parent_house" style=" display: none;">
+          <label for="other_house" value="โปรดระบุ">โปรดระบุ</label>
+          <input id="other_house" class="form-control  col-3" name="other_house" type="text" value="{{ form1.other_house }}" />
+        </div>
+
+
+        <hr class="hr-primary">
+        <div class="form-row">
+          <div class="col-3 ">
+            <label>สถานะสมรส</label>
+            <div class="select">
+              <select class="custom-select" id="my_marrital_status" name="my_marrital_status" value="{{ form1.my_marrital_status }}">
+                <option selected disabled>-- กรุณาเลือก --</option>
+                <option id="single" value="โสด">โสด</option>
+                <option id="married" value="สมรส">สมรส</option>
+                <option id="divorced" value="หย่า">หย่า</option>
+                <option id="seperated" value="แยกกันอยู่">แยกกันอยู่</option>
+                <option id="widowed" value="หม้าย">หม้าย</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="my_marrital_status" style=" display: none;">
+          <label class="available">กรณีสมรสแล้วคู่สมรสมีรายได้หรือไม่</label>
+          <div class="form-row">
+            <div class="custom-control custom-radio">
+              <input id="marry1" class="custom-control-input" name="marry1" type="radio" onclick="show11();" />
+              <label for="marry1" class="custom-control-label" value="มี">มี</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="marry2" class="custom-control-input" name="marry1" type="radio" onclick="show12();" />
+              <label for="marry2" class="custom-control-label" value="ไม่มี">ไม่มี</label>
+            </div>
+          </div>
+
+          <label>คู่สมรส</label>
+          <div class="form-row">
+            <div class="col-3">
+              <label>คำนำหน้าชื่อ</label>
+              <div class="select">
+                <select class="custom-select" name="wi_title" id="wi_title" value="{{ form1.wi_title }}">
+                  <option selected disabled>-- กรุณาเลือก --</option>
+                  <option value="นาย.">นาย</option>
+                  <option value="นาง.">นาง</option>
+                  <option value="นางสาว">นางสาว</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-3">
+              <label>ชื่อ</label>
+              <input type="text" class="form-control" id="wi_Fname" name="wi_Fname" value="{{ form1.wi_Fname }}">
+            </div>
+            <div class="col-3">
+              <label>นามสกุล</label>
+              <input type="text" name="wi_Lname" id="wi_Lname" class="form-control" value="{{ form1.wi_Lname }}">
+            </div>
+            <div class="col-3">
+              <label>อายุ</label>
+              <input type="number" name="wi_age" id="wi_age" class="form-control" value="{{ form1.wi_age }}">
+            </div>
+          </div>
+
+
+          <div class="form-row">
+            <div class="col-3">
+              <label>อาชีพ</label>
+              <input type="text" name="wi_Occ" id="wi_Occ" class="form-control" value="{{ form1.wi_Occ }}">
+            </div>
+            <div class="col-3">
+              <label>สถานที่ทำงาน </label>
+              <input type="text" name="wi_place" id="wi_place" class="form-control" value="{{ form1.wi_place }}">
+            </div>
+            <div class="col-3">
+              <label>
+                เบอร์โทร
+              </label>
+              <input type="text" name="wi_tel" id="wi_tel" class="form-control" value="{{ form1.wi_tel }}">
+            </div>
+          </div>
+        </div>
+
+        <hr class="hr-primary">
+
+        <!-- อัพโหลดรูปภาพ-->
+        <div class="form-group">
+          <label for="basic-url">อัพโหลดรูปภาพ</label>
+          <div class="input-group mb-3">
+            <div class="input-group-prepend">
+              <span class="btn btn-outline-info btn-file" id="basic-addon3">เลือกรูปภาพ… <input type="file" id="imgInp">
+              </span>
+            </div>
+            <input type="text" class="form-control col-3" id="basic-url" aria-describedby="basic-addon3" readonly value=" {{ form1.basic-url }}">
+          </div>
+          <img name="img-upload" id="img-upload" style="margin-top:30px; margin-bottom: 30px;" value=" {{ form1.img-upload }}" />
+        </div>
+
+        <!-- กล้องถ่ายรูป -->
+        <label>กรณีไม่มีไฟล์รูปภาพ</label>
+        <div class="btn_camera">
+          <button type=button class="btn btn-outline-primary" value="Configure" onClick="configure()">เปิดใช้งานกล้องถ่ายภาพ</button>
+          <button type=button class="btn btn-outline-success" value="Take Snapshot" onClick="take_snapshot()">ถ่ายภาพ</button>
+        </div>
+
+        <div class="row">
+          <div id="my_camera">
+            <label class="camera_area">กล้อง</label>
+          </div>
+          <div name="results" id="results">
+            <label class="camera_area">ภาพถ่าย</label>
+          </div>
+        </div>
+
+
+        <p>
+          <input type="submit">
+        </p>
+
+
+    </fieldset>
+  </div>
+</form>

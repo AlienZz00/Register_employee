@@ -1,0 +1,2460 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<head>
+    <title>เว็ปไซต์สมัครงาน</title>
+
+</head>
+
+<link rel="stylesheet" href="public/stylesheets/bootstrap.min.css">
+<link rel="stylesheet" href="public/stylesheets/main.css" type="text/css">
+<link rel="stylesheet" href="public/stylesheets/style-table.css">
+<link rel="stylesheet" href="public/stylesheets/validationEngine.jquery.css" type="text/css" />
+<link rel="stylesheet" href="public/stylesheets/Untitled-1.css">
+
+
+
+<!-- bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+
+
+<script src="public/javascripts/webcam.min.js"></script>
+
+<script src="public/javascripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+
+<script src="public/javascripts/jquery.validationEngine-th.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="public/javascripts/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+
+<script src="public/javascripts/jquery.thprovinceset.1.0.js"></script>
+
+
+<script src="public/javascripts/jsTable.js"></script>
+<script src="public/javascripts/upload-img.js"></script>
+<script src="public/javascripts/take-photo.js"></script>
+<script src="public/javascripts/insert-input.js"></script>
+<script src="public/javascripts/jquery.thpro2.js"></script>
+
+
+
+
+
+
+<script>
+  $(document).ready(function(){
+        $("#Form1,#Form2,#Form3,#Form4,#Form5,#Form6,#Form9,#Form10").validationEngine();
+       });
+       $(document).ready(function () {
+      /*! Fades in page on load */
+      $('body').css('display', 'none');
+      $('body').fadeIn(600);
+    });
+</script>
+
+
+<style>
+  @font-face {
+      font-family: 'Athiti';
+      src: url(public/font/Athiti-semibold.ttf);
+  }
+  .animated-box {
+
+  padding: 30px;
+
+  border-radius: 4px;
+}
+
+
+/* The animation starts here */
+.animated-box {
+  position: relative;
+}
+
+.animated-box:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 4px;
+  background: linear-gradient(120deg, #00F260, #0575E6, #00F260);
+  background-size: 300% 300%;
+  clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+}
+
+.animated-box.in:after {
+  animation: frame-enter 1s forwards ease-in-out reverse, gradient-animation 4s ease-in-out infinite;
+}
+
+/* motion */
+@keyframes gradient-animation {
+  0% {
+    background-position: 15% 0%;
+  }
+  50% {
+    background-position: 85% 100%;
+  }
+  100% {
+    background-position: 15% 0%;
+  }
+}
+
+@keyframes frame-enter {
+  0% {
+    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), 3px calc(100% - 3px), 3px 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  25% {
+    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) calc(100% - 3px), calc(100% - 3px) 100%, 100% 100%, 100% 0%, 0% 0%);
+  }
+  50% {
+    clip-path: polygon(0% 100%, 3px 100%, 3px 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, calc(100% - 3px) 3px, 100% 0%, 0% 0%);
+  }
+  75% {
+    -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 3px, 3px 0%, 0% 0%);
+  }
+  100% {
+    -webkit-clip-path: polygon(0% 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 3px 100%, 0% 100%);
+  }
+}
+
+  </style>
+
+<body>
+
+
+
+  <div class="container_PA">
+    <form action="" id="form1" class="container_data">
+
+      <fieldset class="animated-box in">
+        <h1>กรุณาตรวจสอบข้อมูลให้ถูกต้องอีกครั้ง</h1>
+
+        <div class="table100 ver5 m-b-110" id="head">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head">
+                <th class="column100 column1" data-column="column1">ประวัติส่วนตัว</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        <div class="form-row">
+          <div class="col-sm-6">
+            <label>ทราบข่าวการสมัครจาก</label>
+            <input disabled type="text" name="news" id="news" class="form-control">
+          </div>
+          <div class="col-sm-3">
+            <label>วันที่สมัคร</label>
+            <input disabled type="date" name="my_date_regis" id="my_date_regis" class="form-control">
+          </div>
+        </div>
+
+
+        <div class="form-row">
+          <div class="col-6">
+            <label>สมัครตำแหน่ง</label>
+            <div class="form-row">
+              <div class="col-sm-6">
+                <input disabled type="text" name="position1" id="position1" class="form-control" placeholder="ตำแหน่งที่1">
+              </div>
+              <div class="col-sm-6">
+                <input disabled type="text" name="position2" id="position2" class="form-control" placeholder="ตำแหน่งที่2">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="col-3">
+            <label>วันที่พร้อมทำงาน</label>
+            <input disabled type="date" name="my_date_readywork" id="my_date_readywork" class="form-control">
+          </div>
+
+          <div class="col-3">
+            <label>อัตราเงินเดือนที่คาดหวัง</label>
+            <div class="input-group">
+              <input disabled type="number" name="my_salary_want" id="my_salary_want" class="form-control">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">บาท</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="hr-primary">
+
+        <div class="form-row">
+          <div class="col-sm-3 ">
+            <label>คำนำหน้าชื่อ</label>
+            <select class="custom-select" id="my_title" name="my_title" disabled>
+              <option selected disabled>-- กรุณาเลือก --</option>
+              <option id="male" value="นาย">นาย</option>
+              <option id="female" value="นาง">นาง</option>
+              <option id="other" value="นางสาว">นางสาว</option>
+            </select>
+          </div>
+
+          <div class="col-sm-3">
+            <label>ชื่อ</label>
+            <input disabled type="text" class="form-control" } id="my_Fname" name="my_Fname" required>
+            <div class="invalid-tooltip">
+              Please choose a username.
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <label>นามสกุล</label>
+            <input disabled type="text" name="my_Lname" id="my_Lname" class="form-control">
+          </div>
+        </div>
+
+        <div class="box" style=" display: none;">
+
+          <label>ท่านเคยผ่านการเกณฑ์ทหารหรือไม่</label>
+          <div class="form-row">
+            <div class="custom-control custom-radio">
+              <input id="soldier1" class="custom-control-input soldier" name="soldier" type="radio" value="เคย"
+                disabled>
+              <label class="custom-control-label" for="soldier1">เคย</label>
+            </div>
+
+            <div class="custom-control custom-radio">
+              <input id="soldier2" class="custom-control-input soldier" name="soldier" type="radio" value="ไม่เคย"
+                disabled>
+              <label class="custom-control-label" for="soldier2">ไม่เคย</label>
+            </div>
+          </div>
+
+
+          <!-----------คำถาม การเกณฑ์ทหาร-------------------->
+          <div class="soldier_ever" style="display:none;">
+            <div class="form-row">
+              <div class="col-3">
+                <label>รับราชการทหารแล้ว สังกัด</label>
+                <input disabled type="text" name="sol_affilia" id="sol_affilia" class="form-control ">
+              </div>
+              <div class="col-3">
+                <label>จังหวัด </label>
+                <select class="custom-select btn-outline-primar" disabled name="sol_where" id="sol_where">
+                  <option value="" selected>--------- เลือกจังหวัด ---------</option>
+                  <option value="กรุงเทพมหานคร">กรุงเทพมหานคร</option>
+                  <option value="กระบี่">กระบี่ </option>
+                  <option value="กาญจนบุรี">กาญจนบุรี </option>
+                  <option value="กาฬสินธุ์">กาฬสินธุ์ </option>
+                  <option value="กำแพงเพชร">กำแพงเพชร </option>
+                  <option value="ขอนแก่น">ขอนแก่น</option>
+                  <option value="จันทบุรี">จันทบุรี</option>
+                  <option value="ฉะเชิงเทรา">ฉะเชิงเทรา </option>
+                  <option value="ชัยนาท">ชัยนาท </option>
+                  <option value="ชัยภูมิ">ชัยภูมิ </option>
+                  <option value="ชุมพร">ชุมพร </option>
+                  <option value="ชลบุรี">ชลบุรี </option>
+                  <option value="เชียงใหม่">เชียงใหม่ </option>
+                  <option value="เชียงราย">เชียงราย </option>
+                  <option value="ตรัง">ตรัง </option>
+                  <option value="ตราด">ตราด </option>
+                  <option value="ตาก">ตาก </option>
+                  <option value="นครนายก">นครนายก </option>
+                  <option value="นครปฐม">นครปฐม </option>
+                  <option value="นครพนม">นครพนม </option>
+                  <option value="นครราชสีมา">นครราชสีมา </option>
+                  <option value="นครศรีธรรมราช">นครศรีธรรมราช </option>
+                  <option value="นครสวรรค์">นครสวรรค์ </option>
+                  <option value="นราธิวาส">นราธิวาส </option>
+                  <option value="น่าน">น่าน </option>
+                  <option value="นนทบุรี">นนทบุรี </option>
+                  <option value="บึงกาฬ">บึงกาฬ</option>
+                  <option value="บุรีรัมย์">บุรีรัมย์</option>
+                  <option value="ประจวบคีรีขันธ์">ประจวบคีรีขันธ์ </option>
+                  <option value="ปทุมธานี">ปทุมธานี </option>
+                  <option value="ปราจีนบุรี">ปราจีนบุรี </option>
+                  <option value="ปัตตานี">ปัตตานี </option>
+                  <option value="พะเยา">พะเยา </option>
+                  <option value="พระนครศรีอยุธยา">พระนครศรีอยุธยา </option>
+                  <option value="พังงา">พังงา </option>
+                  <option value="พิจิตร">พิจิตร </option>
+                  <option value="พิษณุโลก">พิษณุโลก </option>
+                  <option value="เพชรบุรี">เพชรบุรี </option>
+                  <option value="เพชรบูรณ์">เพชรบูรณ์ </option>
+                  <option value="แพร่">แพร่ </option>
+                  <option value="พัทลุง">พัทลุง </option>
+                  <option value="ภูเก็ต">ภูเก็ต </option>
+                  <option value="มหาสารคาม">มหาสารคาม </option>
+                  <option value="มุกดาหาร">มุกดาหาร </option>
+                  <option value="แม่ฮ่องสอน">แม่ฮ่องสอน </option>
+                  <option value="ยโสธร">ยโสธร </option>
+                  <option value="ยะลา">ยะลา </option>
+                  <option value="ร้อยเอ็ด">ร้อยเอ็ด </option>
+                  <option value="ระนอง">ระนอง </option>
+                  <option value="ระยอง">ระยอง </option>
+                  <option value="ราชบุรี">ราชบุรี</option>
+                  <option value="ลพบุรี">ลพบุรี </option>
+                  <option value="ลำปาง">ลำปาง </option>
+                  <option value="ลำพูน">ลำพูน </option>
+                  <option value="เลย">เลย </option>
+                  <option value="ศรีสะเกษ">ศรีสะเกษ</option>
+                  <option value="สกลนคร">สกลนคร</option>
+                  <option value="สงขลา">สงขลา </option>
+                  <option value="สมุทรสาคร">สมุทรสาคร </option>
+                  <option value="สมุทรปราการ">สมุทรปราการ </option>
+                  <option value="สมุทรสงคราม">สมุทรสงคราม </option>
+                  <option value="สระแก้ว">สระแก้ว </option>
+                  <option value="สระบุรี">สระบุรี </option>
+                  <option value="สิงห์บุรี">สิงห์บุรี </option>
+                  <option value="สุโขทัย">สุโขทัย </option>
+                  <option value="สุพรรณบุรี">สุพรรณบุรี </option>
+                  <option value="สุราษฎร์ธานี">สุราษฎร์ธานี </option>
+                  <option value="สุรินทร์">สุรินทร์ </option>
+                  <option value="สตูล">สตูล </option>
+                  <option value="หนองคาย">หนองคาย </option>
+                  <option value="หนองบัวลำภู">หนองบัวลำภู </option>
+                  <option value="อำนาจเจริญ">อำนาจเจริญ </option>
+                  <option value="อุดรธานี">อุดรธานี </option>
+                  <option value="อุตรดิตถ์">อุตรดิตถ์ </option>
+                  <option value="อุทัยธานี">อุทัยธานี </option>
+                  <option value="อุบลราชธานี">อุบลราชธานี</option>
+                  <option value="อ่างทอง">อ่างทอง </option>
+                  <option value="อื่นๆ">อื่นๆ</option>
+                </select>
+              </div>
+
+              <div class="col-3">
+                <label>วันประจำการ </label>
+                <input disabled type="date" name="sol_date" id="sol_date" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <div class="soldier_never" style="display:none;">
+            <div class="form-row">
+              <div class="col-3">
+                <label>จะเกณฑ์ทหารในปี</label>
+                <div class="input-group">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text" id="basic-addon1">พ.ศ.</span>
+                  </div>
+                  <input disabled type="number" name="year_drafted" id="year_drafted" class="form-control">
+                </div>
+              </div>
+              <div class="col-3">
+                <label>ได้รับการยกเว้นเนื่องจาก</label>
+                <input disabled type="text" name="exam_except" id="exam_except" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <hr class="hr-primary">
+
+          <div class="form-group">
+            <label>การอุปสมบท</label>
+            <div class="form-row">
+              <div class="custom-control custom-radio">
+                <input id="monkhood1" class="custom-control-input monkhood" name="monkhood" type="radio" value="อุปสมบทแล้ว"
+                  disabled>
+                <label for="monkhood1" class="custom-control-label">อุปสมบทแล้ว</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="monkhood2" class="custom-control-input monkhood" name="monkhood" type="radio" value="ยังไม่เคยอุปสมบท"
+                  disabled>
+                <label for="monkhood2" class="custom-control-label">ยังไม่เคยอุปสมบท</label>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <hr class="hr-primary">
+
+        <!--=============================================================-->
+
+        <div class="form-row">
+          <div class="col-sm-2">
+            <label>วัน/เดือน/ปี เกิด</label>
+            <input disabled type="date" name="my_birth_date" id="my_birth_date" class="form-control ">
+          </div>
+
+
+          <div class="col-sm-2">
+            <label>อายุ</label>
+            <div class="input-group">
+              <input disabled type="number" name="my_age" id="my_age" aria-describedby="basic-addon2" class="form-control">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">ปี</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <label>ส่วนสูง</label>
+            <div class="input-group">
+              <input disabled type="number" name="my_height" id="my_height" aria-describedby="basic-addon2" class="form-control">
+
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">ซ.ม.</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-sm-2">
+            <label>น้ำหนัก</label>
+            <div class="input-group">
+              <input disabled type="number" name="my_weight" id="my_weight" aria-describedby="basic-addon2" class="form-control">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">ก.ก.</span>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-sm-2">
+            <label>หมู่เลือด</label>
+            <div class="select">
+              <select class="custom-select" id="my_blood_group" name="my_blood_group" disabled>
+                <option selected disabled>-- กรุณาเลือก --</option>
+                <option value="กรุ๊ป O">กรุ๊ป O</option>
+                <option value="กรุ๊ป A">กรุ๊ป A</option>
+                <option value="กรุ๊ป B">กรุ๊ป B</option>
+                <option value="กรุ๊ป AB">กรุ๊ป AB</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <hr class="hr-primary">
+        <!--==========================================================================================================================================-->
+
+        <div class="form-row">
+
+          <div class="col-sm-3">
+            <label>ศาสนา</label>
+            <select class="custom-select" name="my_religion" id="my_religion" disabled>
+              <option selected disabled>-- กรุณาเลือก --</option>
+              <option value="ศาสนาคริสต์">ศาสนาคริสต์</option>
+              <option value="ศาสนาอิสลาม">ศาสนาอิสลาม</option>
+              <option value="ศาสนาพราหมณ์-ฮินดู">ศาสนาพราหมณ์-ฮินดู</option>
+              <option value="ศาสนาพุทธ">ศาสนาพุทธ</option>
+              <option value="ศาสนาซิกข์">ศาสนาซิกข์</option>
+              <option value="อื่นๆ">อื่นๆ</option>
+              <option value="ไม่มีศาสนา">ไม่มีศาสนา</option>
+            </select>
+          </div>
+          <div class="col-sm-3">
+            <label>สัญชาติ</label>
+            <div class="select">
+              <select class="custom-select" name="nationality" id="nationality" disabled>
+
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <label>เชื้อชาติ</label>
+            <div class="select">
+              <select class="custom-select" name="race" id="race" class="form-control" disabled>
+
+              </select>
+            </div>
+          </div>
+
+          <div class="col-sm-3">
+            <label>ตำหนิที่เห็นได้ชัดเจน</label>
+            <input disabled type="text" name="my_scar" id="my_scar" class="form-control" placeholder="ตย. : ลายสักที่แขน">
+          </div>
+        </div>
+
+        <hr class="hr-primary">
+
+        <!--=================================================================-->
+
+        <div class="form-row">
+          <div class="col-sm-3">
+            <label>หมายเลขบัตรประจำตัวประชาชน</label>
+            <input disabled type="text" name="my_ID_card" id="my_ID_card" class="form-control">
+          </div>
+          <div class="col-sm-3">
+            <label>วันออกบัตร</label>
+            <input disabled type="date" name="my_expried_date" id="my_expried_date" class="form-control">
+          </div>
+          <div class="col-sm-3">
+            <label>วันหมดอายุ</label>
+            <input disabled type="date" name="my_expried_date" id="my_expried_date" class="form-control">
+          </div>
+          <div class="col-sm-3">
+            <label>จังหวัด</label>
+            <select class="custom-select btn-outline-primar province3" name="my_issued_province" id="my_issued_province"
+              disabled></select>
+          </div>
+          <div class="col-sm-3">
+
+            <label>ออกให้ ณ อำเภอ</label>
+            <select class="custom-select btn-outline-primar district3" name="my_issued_at" id="my_issued_at" disabled></select>
+          </div>
+
+        </div>
+        <hr class="hr-primary">
+
+        <!--======================================================================-->
+
+
+        <label>ที่อยู่ตามบัตรประชาชน</label>
+
+        <div class="form-row">
+          <div class="col-3">
+            <label>บ้านเลขที่</label>
+            <input disabled type="text" name="re_house_code" id="re_house_code" class="form-control">
+          </div>
+          <div class="col-3">
+            <label>หมู่ที่</label>
+            <input disabled type="text" name="re_village_code" id="re_village_code" class="form-control">
+          </div>
+
+          <div class="col-3">
+            <label>ตรอก/ซอย</label>
+            <input disabled type="text" name="re_village" id="re_village" class="form-control">
+          </div>
+          <div class="col-3">
+            <label>ถนน</label>
+            <input disabled type="text" name="re_road" id="re_road" class="form-control">
+          </div>
+        </div>
+
+
+
+
+
+        <div class="form-row">
+          <div class="col-3">
+            <label>จังหวัด</label>
+            <select class="province custom-select btn-outline-primar" name="re_province" id="re_province" disabled></select>
+          </div>
+
+          <div class="col-3">
+            <label>อำเภอ/เขต</label>
+            <select class="district custom-select btn-outline-primar" name="re_area" id="re_area" disabled></select>
+          </div>
+
+          <div class="col-3">
+            <label>ตำบล/แขวง</label>
+            <select class="subdistrict custom-select btn-outline-primar" name="re_sub_district" id="re_sub_district"
+              disabled></select>
+          </div>
+
+          <div class="col-3">
+            <label>หมายเลขไปรษณีย์</label>
+            <input disabled type="text" class="form-control zipcode" name="re_postal_code" id="re_postal_code" disabled>
+          </div>
+        </div>
+
+
+
+        <hr class="hr-primary">
+
+        <!--===============================================================================-->
+
+
+
+
+        <label>ที่อยู่ปัจจุบัน</label>
+
+        <div class="form-row">
+          <div class="col-3">
+            <label>บ้านเลขที่</label>
+            <input disabled type="text" name="pr_house_code" id="pr_house_code" class="form-control">
+          </div>
+          <div class="col-3">
+            <label>หมู่ที่</label>
+            <input disabled type="text" name="pr_village_code" id="pr_village_code" class="form-control">
+          </div>
+          <div class="col-3">
+            <label>ตรอก/ซอย</label>
+            <input disabled type="text" name="pr_village" id="pr_village" class="form-control">
+          </div>
+          <div class="col-3">
+            <label>ถนน</label>
+            <input disabled type="text" name="pr_road" id="pr_road" class="form-control">
+          </div>
+        </div>
+
+        <div class="form-row">
+          <div class="col-3">
+            <label>จังหวัด</label>
+            <select disabled class="province2 custom-select btn-outline-primar" name="pr_province" id="pr_province"></select>
+          </div>
+
+          <div class="col-3">
+            <label>อำเภอ/เขต</label>
+            <select disabled class="district2 custom-select btn-outline-primar" name="pr_area" id="pr_area"></select>
+          </div>
+
+          <div class="col-3">
+            <label>ตำบล/แขวง</label>
+            <select disabled class="subdistrict2 custom-select btn-outline-primar" name="pr_sub_district" id="pr_sub_district "></select>
+          </div>
+
+          <div class="col-3">
+            <label>หมายเลขไปรษณีย์</label>
+            <input disabled type="text" class="form-control zipcode2" name="pr_postal_code" id="pr_postal_code">
+          </div>
+        </div>
+
+
+        <div class="form-row">
+          <div class="col-sm-3">
+            <label>สถานที่ใกล้เคียงที่เด่นชัด</label>
+            <input disabled type="text" name="posi_neigh" id="posi_neigh" class="form-control">
+          </div>
+          <div class="col-sm-3">
+            <label>เบอร์โทรที่สามารถติดต่อได้</label>
+            <input disabled type="text" name="my_tel" id="my_tel" class="form-control">
+          </div>
+        </div>
+
+
+        <label>บ้านที่พักอยู่ในปัจจุบัน</label>
+        <div class="select">
+          <select class="custom-select col-sm-3" id="parent_house" name="parent_house" data-action="toggle" disabled>
+            <option selected disabled>-- กรุณาเลือก --</option>
+            <option value="ตนเอง">ตนเอง</option>
+            <option value="ของญาติ">ของญาติ</option>
+            <option value="หอพัก">หอพัก-บ้านเช่า</option>
+            <option value="ของคนรู้จัก">ของคนรู้จัก</option>
+            <option value="อาศัยผู้อื่น">อาศัยผู้อื่น</option>
+          </select>
+
+          <div class="parent_house" style=" display: none;">
+            <label for="other_house" value="โปรดระบุ">โปรดระบุ</label>
+            <input id="other_house" class="form-control  col-3" name="other_house" disabled type="text" />
+          </div>
+
+
+          <hr class="hr-primary">
+          <div class="form-row">
+            <div class="col-3 ">
+              <label>สถานะสมรส</label>
+              <div class="select">
+                <select class="custom-select" id="my_marrital_status" name="my_marrital_status" disabled>
+                  <option selected disabled>-- กรุณาเลือก --</option>
+                  <option id="single" value="โสด">โสด</option>
+                  <option id="married" value="สมรส">สมรส</option>
+                  <option id="single" value="หย่า">หย่า</option>
+                  <option id="single" value="แยกกันอยู่">แยกกันอยู่</option>
+                  <option id="single" value="หม้าย">หม้าย</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class="my_marrital_status" style=" display: none;">
+            <label class="available">กรณีสมรสแล้วคู่สมรสมีรายได้หรือไม่</label>
+            <div class="form-row">
+              <div class="custom-control custom-radio">
+                <input id="marry1" class="custom-control-input marry" name="marry" type="radio" value="มี">
+                <label for="marry1" class="custom-control-label">มี</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="marry2" class="custom-control-input marry" name="marry" type="radio" value="ไม่มี">
+                <label for="marry2" class="custom-control-label">ไม่มี</label>
+              </div>
+            </div>
+
+            <label>คู่สมรส</label>
+            <div class="form-row">
+              <div class="col-3">
+                <label>คำนำหน้าชื่อ</label>
+                <div class="select">
+                  <select class="custom-select" name="wi_title" id="wi_title" disabled>
+                    <option hidden>-- กรุณาเลือก --</option>
+                    <option id="wi_male" value="นาย">นาย</option>
+                    <option id="wi_female" value="นาง">นาง</option>
+                    <option id="wi_other" value="นางสาว">นางสาว</option>
+                  </select>
+                </div>
+              </div>
+              <div class="col-3">
+                <label>ชื่อ</label>
+                <input disabled type="text" class="form-control" id="wi_Fname" name="wi_Fname">
+              </div>
+              <div class="col-3">
+                <label>นามสกุล</label>
+                <input disabled type="text" name="wi_Lname" id="wi_Lname" class="form-control">
+              </div>
+              <div class="col-3">
+                <label>อายุ</label>
+                <input disabled type="number" name="wi_age" id="wi_age" class="form-control">
+              </div>
+            </div>
+
+
+            <div class="form-row">
+              <div class="col-3">
+                <label>อาชีพ</label>
+                <input disabled type="text" name="wi_Occ" id="wi_Occ" class="form-control">
+              </div>
+              <div class="col-3">
+                <label>สถานที่ทำงาน </label>
+                <input disabled type="text" name="wi_place" id="wi_place" class="form-control">
+              </div>
+              <div class="col-3">
+                <label>
+                  เบอร์โทร
+                </label>
+                <input disabled type="text" name="wi_tel" id="wi_tel" class="form-control">
+              </div>
+            </div>
+          </div>
+
+          <hr class="hr-primary">
+
+
+
+          <img name="img_upload" id="img_upload" />
+
+          <label>ภาพถ่าย</label>
+          <label>กรุณาเลือกวิธีการอัพโหลดภาพถ่าย</label>
+          <div class="form-row">
+            <div class="custom-control custom-radio">
+              <input id="load_image1" class="custom-control-input load_image" name="load_image" type="radio" value="อัพโหลดรูปภาพ" disabled>
+              <label class="custom-control-label" for="load_image1">อัพโหลดรูปภาพ</label>
+            </div>
+
+            <div class="custom-control custom-radio">
+              <input id="load_image2" class="custom-control-input load_image" name="load_image" type="radio" value="ถ่ายภาพจากกล้อง" disabled>
+              <label class="custom-control-label" for="load_image2">ถ่ายภาพจากกล้อง</label>
+            </div>
+          </div>
+
+
+
+
+          <div class="upload_img" style="display:none;">
+            <!-- อัพโหลดรูปภาพ-->
+            <div class="form-group">
+              <label for="basic-url">อัพโหลดรูปภาพ</label>
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+           
+                </div>
+                <input type="text" class="form-control col-3" id="basic_url" name="basic_url" aria-describedby="basic-addon3"
+                  readonly>
+              </div>
+            </div>
+          </div>
+
+
+            <!-- กล้องถ่ายรูป -->
+
+           
+
+
+         
+
+          <!-- this is form1 -->
+          <a href="index.html?edit=index">แก้ไข Form1</a>
+
+        </div>
+
+        <br>
+
+
+      </fieldset>
+
+    </form>
+
+    <hr>
+
+    <form action="" id="form2" class="container_data">
+      <fieldset class="animated-box in">
+
+        <div class="table100 ver5 m-b-110 ">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head head1">
+                <th class="column100 column1 " data-column="column1">รายละเอียดเกี่ยวกับครอบครัว</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="form-group">
+          <label>บิดา</label>
+
+
+          <div class="form-row">
+            <div class="col-3">
+              <label>คำนำหน้าชื่อ</label>
+              <select class="op-input120 custom-select" id="fa_title" disabled>
+                <option value="นาย">นาย</option>
+              </select>
+            </div>
+            <div class="col-3">
+              <label>ชื่อ</label>
+              <input disabled type="text" class="form-control" id="fa_Fname" name="fa_Fname">
+            </div>
+            <div class="col-3">
+              <label>นามสกุล</label>
+              <input disabled type="text" name="fa_Lname" id="fa_Lname" class="form-control">
+            </div>
+            <div class="col-3">
+              <label>อายุ</label>
+              <input disabled type="number" name="fa_age" id="fa_age" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-3">
+              <label>อาชีพ</label>
+              <input disabled type="text" name="fa_Occ" id="fa_Occ" class="form-control">
+            </div>
+            <div class="col-3">
+              <label>สถานที่ทำงาน</label>
+              <input disabled type="text" name="fa_place" id="fa_place" class="form-control">
+            </div>
+            <div class="col-md-3">
+              <label>โทรศัพท์</label>
+              <input disabled type="text" name="fa_tel" id="fa_tel" class="form-control">
+            </div>
+          </div>
+        </div>
+
+
+        <hr class="hr-primary">
+
+        <div class="form-group">
+          <label>มารดา</label>
+          <div class="form-row">
+            <div class="col-3">
+              <label>คำนำหน้าชื่อ</label>
+              <div class="select">
+                <select class="custom-select" name="ma_title" id="ma_title" disabled>
+                  <option hidden>-- กรุณาเลือก --</option>
+                  <option value="นาย">นาย</option>
+                  <option value="นาง">นาง</option>
+                  <option value="นางสาว">นางสาว</option>
+                </select>
+              </div>
+            </div>
+            <div class="col-3">
+              <label>ชื่อ</label>
+              <input disabled type="text" class="form-control" id="ma_Fname" name="ma_Fname">
+            </div>
+            <div class="col-3">
+              <label>นามสกุล</label>
+              <input disabled type="text" name="ma_Lname" id="ma_Lname" class="form-control">
+            </div>
+            <div class="col-3">
+              <label>อายุ</label>
+              <input disabled type="number" name="ma_age" id="ma_age" class="form-control">
+            </div>
+          </div>
+
+          <div class="form-row">
+            <div class="col-3">
+              <label>อาชีพ</label>
+              <input disabled type="text" name="ma_Occ" id="ma_Occ" class="form-control">
+            </div>
+            <div class="col-3">
+              <label>สถานที่ทำงาน</label>
+              <input disabled type="text" name="ma_place" id="ma_place" class="form-control">
+            </div>
+            <div class="col-3">
+              <label>โทรศัพท์</label>
+              <input disabled type="text" name="ma_tel" id="ma_tel" class="form-control">
+            </div>
+          </div>
+        </div>
+
+        <hr class="hr-primary">
+
+
+
+        <!--========================================================================-->
+
+        <label>พี่น้อง</label>
+        <div class="form-row">
+          <div class="col-2">
+            <label>พี่น้องร่วมบิดา-มารดาจำนวน</label>
+            <div class="input-group">
+              <input disabled type="number" name="num_bro" id="num_bro" aria-describedby="basic-addon2" class="form-control">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">คน</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+
+
+
+
+        <div class="table table-responsive">
+          <table class="table table-responsive table-striped table-bordered">
+            <thead>
+              <tr>
+                <td id="table1_name">ชื่อ-นามสกุล</td>
+                <td id="table1_age">อายุ</td>
+                <td id="table1_career">อาชีพ</td>
+                <td id="table1_where">สถานที่ทำงาน</td>
+                <td id="table1_tel">โทรศัพท์</td>
+              </tr>
+            </thead>
+            <tbody id="TextBoxContainer">
+              <td><input name="DynamicTextBox_name" id="DynamicTextBox_name" disabled type="text" class="form-control" /></td>
+              <td><input name="DynamicTextBox_age" id="DynamicTextBox_age" disabled type="number" class="form-control" /></td>
+              <td><input name="DynamicTextBox_career" id="DynamicTextBox_career" disabled type="text" class="form-control" /></td>
+              <td><input name="DynamicTextBox_where" id="DynamicTextBox_where" disabled type="text" class="form-control" /></td>
+              <td><input name="DynamicTextBox_tel" id="DynamicTextBox_tel" disabled type="number" class="form-control" /></td>
+            </tbody>
+            <tfoot>
+              <tr>
+                <th colspan="5">
+                  <button id="btnAdd" disabled type="button" class="btn btn-outline-primary" data-toggle="tooltip"
+                    data-original-title="Add more controls"><i class="glyphicon glyphicon-plus-sign"></i>
+                    เพิ่ม</button></th>
+              </tr>
+            </tfoot>
+          </table>
+        </div>
+        <br>
+        <a href="form2.html?edit=form2">แก้ไข Form2</a>
+
+      </fieldset>
+    </form>
+
+    <hr>
+
+
+    <form action="" id="SignupForm" class="container_data">
+      <fieldset class="animated-box in">
+        <div class="table100 ver5 m-b-110 ">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head head1">
+                <th class="column100 column1 " data-column="column1">ประวัติการศึกษา</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+        <div class="table100 ver5 m-b-110">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head">
+                <th class="column100 column1" data-column="column1">ระดับการศึกษา</th>
+                <th class="column100 column2" data-column="column2">ชื่อสถานศึกษา</th>
+                <th class="column100 column3" data-column="column3">วุฒิที่ได้รับ</th>
+                <th class="column100 column4" data-column="column4">สาขาวิชา</th>
+                <th class="column100 column5" data-column="column5">ปี
+                  พ.ศ.
+                  ที่เริ่มศึกษา</th>
+                <th class="column100 column6" data-column="column6">ปี
+                  พ.ศ.
+                  ที่สำเร็จ</th>
+                <th class="column100 column7" data-column="column7">เกรดเฉลี่ย</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row100">
+                <td class="column100 column1" data-column="column1">ประถมศึกษา</td>
+                <td><input name="elementary_sch" id="elementary_sch" disabled type="text" class="column100 column2 form-control"
+                    data-column="column2"></td>
+
+                <td><input name="degree_element" id="degree_element" disabled type="text" class="column100 column3 form-control"
+                    data-column="column3"></td>
+
+                <td><input name="field_element" id="field_element" disabled type="text" class="column100 column4 form-control"
+                    data-column="column4"></td>
+
+                <td><input name="begin_element" id="begin_element" disabled type="number" class="column100 column5 form-control"
+                    data-column="column5"></td>
+
+                <td><input name="end_element" id="end_element" disabled type="number" class="column100 column6 form-control"
+                    data-column="column6"></td>
+
+                <td><input name="grade_element" id="grade_element" disabled type="number" class="column100 column7 form-control"
+                    data-column="column7"></td>
+
+              </tr>
+
+              <tr class="row100">
+                <td class=" column1 column100" data-column="column1">มัธยมศึกษา</td>
+                <td><input name="secondary_sch" id="secondary_sch" disabled type="text" class="column100 column2 form-control"
+                    data-column="column2"></td>
+
+                <td><input name="degree_secon" id="degree_secon" disabled type="text" class="column100 column3 form-control"
+                    data-column="column3"></td>
+
+                <td><input name="field_secon" id="field_secon" disabled type="text" class="column100 column4 form-control"
+                    data-column="column4"></td>
+
+                <td><input name="begin_secon" id="begin_secon" disabled type="number" class="column100 column5 form-control"
+                    data-column="column5"></td>
+
+                <td><input name="end_secon" id="end_secon" disabled type="number" class="column100 column6 form-control"
+                    data-column="column6"></td>
+
+                <td><input name="grade_secon" id="grade_secon" disabled type="number" class="column100 column7 form-control"
+                    data-column="column7"></td>
+              </tr>
+
+              <tr class="row100">
+                <td class=" column1 column100" data-column="column1">มัธยมปลาย</td>
+                <td><input name="hight_sch" id="hight_sch" disabled type="text" class="column100 column2 form-control"
+                    data-column="column2"></td>
+
+                <td><input name="degree_hight" id="degree_hight" disabled type="text" class="column100 column3 form-control"
+                    data-column="column3"></td>
+
+                <td><input name="field_hight" id="field_hight" disabled type="text" class="column100 column4 form-control"
+                    data-column="column4"></td>
+
+                <td><input name="begin_hight" id="begin_hight" disabled type="number" class="column100 column5 form-control"
+                    data-column="column5"></td>
+
+                <td><input name="end_hight" id="end_hight" disabled type="number" class="column100 column6 form-control"
+                    data-column="column6"></td>
+
+                <td><input name="grade_hight" id="grade_hight" disabled type="number" class="column100 column7 form-control"
+                    data-column="column7"></td>
+              </tr>
+
+              <tr class="row100">
+                <td class=" column1 column100" data-column="column1">อาชีวะศึกษา(ปวช.)</td>
+                <td><input name="voca_sch" id="voca_sch" disabled type="text" class="column100 column2 form-control"
+                    data-column="column2"></td>
+
+                <td><input name="degree_voca" id="degree_voca" disabled type="text" class="column100 column3 form-control"
+                    data-column="column3"></td>
+
+                <td><input name="field_voca" id="field_voca" disabled type="text" class="column100 column4 form-control"
+                    data-column="column4"></td>
+
+                <td><input name="begin_voca" id="begin_voca" disabled type="number" class="column100 column5 form-control"
+                    data-column="column5"></td>
+
+                <td><input name="end_voca" id="end_voca" disabled type="number" class="column100 column6 form-control"
+                    data-column="column6"></td>
+
+                <td><input name="grade_voca" id="grade_voca" disabled type="number" class="column100 column7 form-control"
+                    data-column="column7"></td>
+              </tr>
+
+              <tr class="row100">
+                <td class=" column1 column100" data-column="column1">อาชีวะศึกษา(ปวส.)</td>
+                <td><input name="hight_voca_sch" id="hight_voca_sch" disabled type="text" class="column100 column2 form-control"
+                    data-column="column2"></td>
+
+                <td><input name="degree_hight_voca" id="degree_hight_voca" disabled type="text" class="column100 column3 form-control"
+                    data-column="column3"></td>
+
+                <td><input name="field_hight_voca" id="field_hight_voca" disabled type="text" class="column100 column4 form-control"
+                    data-column="column4"></td>
+
+                <td><input name="begin_hight_voca" id="begin_hight_voca" disabled type="number" class="column100 column5 form-control"
+                    data-column="column5"></td>
+
+                <td><input name="end_hight_voca" id="end_hight_voca" disabled type="number" class="column100 column6 form-control"
+                    data-column="column6"></td>
+
+                <td><input name="grade_hight_voca" id="grade_hight_voca" disabled type="number" class="column100 column7 form-control"
+                    data-column="column7"></td>
+
+              </tr>
+
+              <tr class="row100">
+                <td class=" column1 column100" data-column="column1">ปริญญาตรี</td>
+                <td><input name="bachelor" id="bachelor" disabled type="text" class="column100 column2 form-control"
+                    data-column="column2"></td>
+
+                <td><input name="degree_bachelor" id="degree_bachelor" disabled type="text" class="column100 column3 form-control"
+                    data-column="column3"></td>
+
+                <td><input name="field_bachelor" id="field_bachelor" disabled type="text" class="column100 column4 form-control"
+                    data-column="column4"></td>
+
+                <td><input name="begin_bachelor" id="begin_bachelor" disabled type="number" class="column100 column5 form-control"
+                    data-column="column5"></td>
+
+                <td><input name="end_bachelor" id="end_bachelor" disabled type="number" class="column100 column6 form-control"
+                    data-column="column6"></td>
+
+                <td><input name="grade_bachelor" id="grade_bachelor" disabled type="number" class="column100 column7 form-control"
+                    data-column="column7"></td>
+
+              </tr>
+
+              <tr class="row100">
+                <td class=" column1 column100" data-column="column1">ปริญญาโท</td>
+                <td><input name="master" id="master" disabled type="text" class="column100 column2 form-control"
+                    data-column="column2"></td>
+
+                <td><input name="degree_master" id="degree_master" disabled type="text" class="column100 column3 form-control"
+                    data-column="column3"></td>
+
+                <td><input name="field_master" id="field_master" disabled type="text" class="column100 column4 form-control"
+                    data-column="column4"></td>
+
+                <td><input name="begin_master" id="begin_master" disabled type="number" class="column100 column5 form-control"
+                    data-column="column5"></td>
+
+                <td><input name="end_master" id="end_master" disabled type="number" class="column100 column6 form-control"
+                    data-column="column6"></td>
+
+                <td><input name="grade_master" id="grade_master" disabled type="number" class="column100 column7 form-control"
+                    data-column="column7"></td>
+
+              </tr>
+
+              <tr class="row100">
+                <td class=" column1 column100" data-column="column1">อื่นๆ</td>
+                <td><input name="other_sch" id="other_sch" disabled type="text" class="column100 column2 form-control"
+                    data-column="column2"></td>
+
+                <td><input name="degree_other" id="degree_other" disabled type="text" class="column100 column3 form-control"
+                    data-column="column3"></td>
+
+                <td><input name="field_other" id="field_other" disabled type="text" class="column100 column4 form-control"
+                    data-column="column4"></td>
+
+                <td><input name="begin_other" id="begin_other" disabled type="number" class="column100 column5 form-control"
+                    data-column="column5"></td>
+
+                <td><input name="end_other" id="end_other" disabled type="number" class="column100 column6 form-control"
+                    data-column="column6"></td>
+
+                <td><input name="grade_other" id="grade_other" disabled type="number" class="column100 column7 form-control"
+                    data-column="column7"></td>
+
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <hr class="hr-primary">
+
+        <div class="form-group">
+          <label>กิจกรรมพิเศษระหว่างการศึกษา</label>
+          <input class="form-control col-3" name="ed_act_1" id="ed_act_1" disabled type="text" placeholder="ex : กิจกรรมวิ่งมาราธอน">
+          <input disabled type="text" name="ed_act_2" id="ed_act_2" class="form-control col-3" placeholder="ex:เข้าร่วม SC camp">
+          <input disabled type="text" name="ed_act_3" id="ed_act_3" class="form-control col-3" placeholder="ex:เข้าร่วมค่ายอาสา">
+        </div>
+        <div class="form-group">
+          <label>การฝึกอบรมพิเศษ</label>
+          <input class="form-control col-3" name="ed_train_1" id="ed_train_1" disabled type="text" placeholder="ex : กิจกรรมวิ่งมาราธอน">
+          <input disabled type="text" name="ed_train_2" id="ed_train_2" class="form-control col-3" placeholder="ex:เข้าร่วม SC camp">
+          <input disabled type="text" name="ed_train_3" id="ed_train_3" class="form-control col-3" placeholder="ex:เข้าร่วมค่ายอาสา">
+        </div>
+        <a href="form3.html?edit=form3">แก้ไข Form3</a>
+      </fieldset>
+    </form>
+
+    <hr>
+
+
+
+
+
+    <form action="" id="form4" class="container_data">
+      <fieldset class="animated-box in">
+        <div class="table100 ver5 m-b-110 ">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head head1">
+                <th class="column100 column1 " data-column="column1">ประวัติการทำงาน</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+
+        <div class="table100 ver5 m-b-110">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head">
+                <th class="column100 column1" id="column1" data-column="column1">ชื่อบริษัท
+                  / ที่อยู่ / ประเภทธุรกิจ</th>
+                <th class="column100 column2" id="column2" data-column="column2">จาก-ถึง</th>
+                <th class="column100 column3" id="column3" data-column="column3">ตำแหน่ง</th>
+                <th class="column100 column4" id="column4" data-column="column4">เงินเดือนล่าสุด</th>
+                <th class="column100 column5" id="column5" data-column="column5">ลักษณะงานที่ทำ</th>
+                <th class="column100 column6" id="column6" data-column="column6">สาเหตุที่ออก</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row100">
+                <td><input name="office_address1" id="office_address1" disabled type="text" class="column100 column1 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="start_end_workold1" id="start_end_workold1" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="rank_work1" id="rank_work1" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="salary_workold1" id="salary_workold1" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+
+                <td><input name="job_descrip_workold1" id="job_descrip_workold1" disabled type="text" class="column100 column5 form-control"
+                    id="column5" data-column="column5"></td>
+
+                <td><input name="resign_workold1" id="resign_workold1" disabled type="text" class="column100 column6 form-control"
+                    id="column6" data-column="column6"></td>
+
+              </tr>
+
+              <tr class="row100">
+                <td><input name="office_address2" id="office_address2" disabled type="text" class="column1 column100 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="start_end_workold2" id="start_end_workold2" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="rank_work2" id="rank_work2" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="salary_workold2" id="salary_workold2" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+
+                <td><input name="job_descrip_workold2" id="job_descrip_workold2" disabled type="text" class="column100 column5 form-control"
+                    id="column5" data-column="column5"></td>
+
+                <td><input name="resign_workold2" id="resign_workold2" disabled type="text" class="column100 column6 form-control"
+                    id="column6" data-column="column6"></td>
+
+
+              </tr>
+
+              <tr class="row100">
+                <td><input name="office_address3" id="office_address3" disabled type="text" class="column1 column100 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="start_end_workold3" id="start_end_workold3" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="rank_work3" id="rank_work3" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="salary_workold3" id="salary_workold3" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+
+                <td><input name="job_descrip_workold3" id="job_descrip_workold3" disabled type="text" class="column100 column5 form-control"
+                    id="column5" data-column="column5"></td>
+
+                <td><input name="resign_workold3" id="resign_workold3" disabled type="text" class="column100 column6 form-control"
+                    id="column6" data-column="column6"></td>
+
+
+              </tr>
+
+              <tr class="row100">
+                <td><input name="office_address4" id="office_address4" disabled type="text" class="column1 column100 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="start_end_workold4" id="start_end_workold4" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="rank_work4" id="rank_work4" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="salary_workold4" id="salary_workold4" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+
+                <td><input name="job_descrip_workold4" id="job_descrip_workold4" disabled type="text" class="column100 column5 form-control"
+                    id="column5" data-column="column5"></td>
+
+                <td><input name="resign_workold4" id="resign_workold4" disabled type="text" class="column100 column6 form-control"
+                    id="column6" data-column="column6"></td>
+
+
+              </tr>
+
+              <tr class="row100">
+                <td><input name="office_address5" id="office_address5" disabled type="text" class="column1 column100 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="start_end_workold5" id="start_end_workold5" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="rank_work5" id="rank_work5" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="salary_workold5" id="salary_workold5" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+
+                <td><input name="job_descrip_workold5" id="job_descrip_workold5" disabled type="text" class="column100 column5 form-control"
+                    id="column5" data-column="column5"></td>
+
+                <td><input name="resign_workold5" id="resign_workold5" disabled type="text" class="column100 column6 form-control"
+                    id="column6" data-column="column6"></td>
+
+              </tr>
+
+              <tr class="row100">
+                <td><input name="office_address6" id="office_address6" disabled type="text" class="column1 column100 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="start_end_workold6" id="start_end_workold6" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="rank_work6" id="rank_work6" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="salary_workold6" id="salary_workold6" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+
+                <td><input name="job_descrip_workold6" id="job_descrip_workold6" disabled type="text" class="column100 column5 form-control"
+                    id="column5" data-column="column5"></td>
+
+                <td><input name="resign_workold6" id="resign_workold6" disabled type="text" class="column100 column6 form-control"
+                    id="column6" data-column="column6"></td>
+
+
+
+              </tr>
+
+
+            </tbody>
+          </table>
+        </div>
+        <div class="table100 ver5 m-b-110 ">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head head1">
+                <th class="column100 column1 " data-column="column1">ประวัติการฝึกอบรม (Training Record)</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+
+        <div class="table100 ver5 m-b-110">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head">
+                <th class="column100 column1" id="column1" data-column="column1">หัวข้อวิชาที่ฝึกอบรม</th>
+                <th class="column100 column2" id="column2" data-column="column2">ระยะเวลาที่อบรม</th>
+                <th class="column100 column3" id="column3" data-column="column3">สถาบัน</th>
+                <th class="column100 column4" id="column4" data-column="column4">หมายเหตุ</th>
+
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="row100">
+                <td><input name="title_training1" id="title_training1" disabled type="text" class="column100 column1 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="time_training1" id="time_training1" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="training_where1" id="training_where1" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="training_note1" id="training_note1" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+
+
+
+              </tr>
+
+              <tr class="row100">
+                <td><input name="title_training2" id="title_training2" disabled type="text" class="column1 column100 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="time_training2" id="time_training2" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="training_where2" id="training_where2" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="training_note2" id="training_note2" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+
+
+              </tr>
+
+              <tr class="row100">
+                <td><input name="title_training3" id="title_training3" disabled type="text" class="column1 column100 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="time_training3" id="time_training3" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="training_where3" id="training_where3" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="training_note3" id="training_note3" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+
+
+              </tr>
+
+              <tr class="row100">
+                <td><input name="title_training4" id="title_training4" disabled type="text" class="column1 column100 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="time_training4" id="time_training4" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="training_where4" id="training_where4" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="training_note4" id="training_note4" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+
+              </tr>
+
+              <tr class="row100">
+                <td><input name="title_training5" id="title_training5" disabled type="text" class="column1 column100 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="time_training5" id="time_training5" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="training_where5" id="training_where5" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="training_note5" id="training_note5" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+
+
+              </tr>
+
+              <tr class="row100">
+                <td><input name="title_training6" id="title_training6" disabled type="text" class="column1 column100 form-control"
+                    id="column1" data-column="column1"></td>
+
+                <td><input name="time_training6" id="time_training6" disabled type="text" class="column100 column2 form-control"
+                    id="column2" data-column="column2"></td>
+
+                <td><input name="training_where6" id="training_where6" disabled type="text" class="column100 column3 form-control"
+                    id="column3" data-column="column3"></td>
+
+                <td><input name="training_note6" id="training_note6" disabled type="text" class="column100 column4 form-control"
+                    id="column4" data-column="column4"></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+        <a href="form4.html?edit=form4">แก้ไข Form4</a>
+
+      </fieldset>
+    </form>
+
+    <hr>
+
+
+
+    <form action="" id="form5" class="container_data">
+      <fieldset class="animated-box in">
+        <div class="table100 ver5 m-b-110 ">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head head1">
+                <th class="column100 column1 " data-column="column1">ความสามในการใช้ภาษาต่างประเทศและคอมพิวเตอร์ <br>
+                  (Languages and Computer Ability)</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+
+        <label>ภาษาต่างประเทศ</label>
+        <h4>ภาษาไทย</h4>
+        <div class="fieldset-content">
+          <div class="table100 ver5 m-b-110">
+            <table data-vertable="ver5">
+              <thead>
+                <tr class="row100 head">
+                  <th class="column100 column1" id="column1" data-column="column1">พูด</th>
+                  <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
+                  <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="row100">
+                  <td>
+                    <div class="form-row">
+
+                      <div class="custom-control custom-radio">
+                        <input id="speaking_thai1" class="custom-control-input" name="speaking_thai" disabled type="radio"
+                          value="ดี">
+                        <label for="speaking_thai1" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="speaking_thai2" class="custom-control-input" name="speaking_thai" disabled type="radio"
+                          value="พอใช้">
+                        <label for="speaking_thai2" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+
+                  </td>
+
+                  <td>
+                    <div class="form-row">
+                      <div class="custom-control custom-radio">
+                        <input id="reading_thai1" class="custom-control-input" name="reading_thai" disabled type="radio"
+                          value="ดี">
+                        <label for="reading_thai1" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="reading_thai2" class="custom-control-input" name="reading_thai" disabled type="radio"
+                          value="พอใช้">
+                        <label for="reading_thai2" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+
+                  </td>
+
+                  <td>
+                    <div class="form-row">
+                      <div class="custom-control custom-radio">
+                        <input id="writing_thai1" class="custom-control-input" name="writing_thai" disabled type="radio"
+                          value="ดี">
+                        <label for="writing_thai1" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="writing_thai2" class="custom-control-input" name="writing_thai" disabled type="radio"
+                          value="พอใช้">
+                        <label for="writing_thai2" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+        <h4>ภาษาอังกฤษ</h4>
+        <div class="fieldset-content">
+          <div class="table100 ver5 m-b-110">
+            <table data-vertable="ver5">
+              <thead>
+                <tr class="row100 head">
+                  <th class="column100 column1" id="column1" data-column="column1">พูด</th>
+                  <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
+                  <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="row100">
+                  <td>
+                    <div class="form-row">
+                      <div class="custom-control custom-radio">
+                        <input id="speaking_eng1" class="custom-control-input" name="speaking_eng" disabled type="radio"
+                          value="ดี">
+                        <label for="speaking_eng1" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="speaking_eng2" class="custom-control-input" name="speaking_eng" disabled type="radio"
+                          value="พอใช้">
+                        <label for="speaking_eng2" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-row">
+                      <div class="custom-control custom-radio">
+                        <input id="reading_eng1" class="custom-control-input" name="reading_eng" disabled type="radio"
+                          value="ดี">
+                        <label for="reading_eng1" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="reading_eng2" class="custom-control-input" name="reading_eng" disabled type="radio"
+                          value="พอใช้">
+                        <label for="reading_eng2" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-row">
+                      <div class="custom-control custom-radio">
+                        <input id="writing_eng1" class="custom-control-input" name="writing_eng" disabled type="radio"
+                          value="ดี">
+                        <label for="writing_eng1" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="writing_eng2" class="custom-control-input" name="writing_eng" disabled type="radio"
+                          value="พอใช้">
+                        <label for="writing_eng2" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h5>ภาษาอื่นๆ</h5>
+        <div class="fieldset-content">
+          <div class="table100 ver5 m-b-110">
+            <table data-vertable="ver5">
+              <thead>
+                <tr class="row100 head">
+                  <th class="column100 column1" id="column1" data-column="column1">พูด</th>
+                  <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
+                  <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="row100">
+                  <td>
+                    <div class="form-row">
+                      <div class="custom-control custom-radio">
+                        <input id="speaking_other_lang1" class="custom-control-input" name="speaking_other_lang"
+                          disabled type="radio" value="ดี">
+                        <label for="speaking_other_lang1" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="speaking_other_lang2" class="custom-control-input" name="speaking_other_lang"
+                          disabled type="radio" value="พอใช้">
+                        <label for="speaking_other_lang2" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-row">
+                      <div class="custom-control custom-radio">
+                        <input id="reading_other_lang1" class="custom-control-input" name="reading_other_lang" disabled
+                          type="radio" value="ดี">
+                        <label for="reading_other_lang1" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="reading_other_lang2" class="custom-control-input" name="reading_other_lang" disabled
+                          type="radio" value="พอใช้">
+                        <label for="reading_other_lang2" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-row">
+                      <div class="custom-control custom-radio">
+                        <input id="writing_other_lang1" class="custom-control-input" name="writing_other_lang" disabled
+                          type="radio" value="ดี">
+                        <label for="writing_other_lang1" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="writing_other_lang2" class="custom-control-input" name="writing_other_lang" disabled
+                          type="radio" value="พอใช้">
+                        <label for="writing_other_lang2" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <h5>ภาษาอื่นๆ</h5>
+        <div class="fieldset-content">
+          <div class="table100 ver5 m-b-110">
+            <table data-vertable="ver5">
+              <thead>
+                <tr class="row100 head">
+                  <th class="column100 column1" id="column1" data-column="column1">พูด</th>
+                  <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
+                  <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                </tr>
+              </thead>
+
+              <tbody>
+                <tr class="row100">
+                  <td>
+                    <div class="form-row">
+                      <div class="custom-control custom-radio">
+                        <input id="speaking_other_lang3" class="custom-control-input" name="speaking_other_lang2"
+                          disabled type="radio" value="ดี">
+                        <label for="speaking_other_lang3" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="speaking_other_lang4" class="custom-control-input" name="speaking_other_lang2"
+                          disabled type="radio" value="พอใช้">
+                        <label for="speaking_other_lang4" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-row">
+                      <div class="custom-control custom-radio">
+                        <input id="reading_other_lang3" class="custom-control-input" name="reading_other_lang2"
+                          disabled type="radio" value="ดี">
+                        <label for="reading_other_lang3" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="reading_other_lang4" class="custom-control-input" name="reading_other_lang2"
+                          disabled type="radio" value="พอใช้">
+                        <label for="reading_other_lang4" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+                  </td>
+
+                  <td>
+                    <div class="form-row">
+                      <div class="custom-control custom-radio">
+                        <input id="writing_other_lang3" class="custom-control-input" name="writing_other_lang2"
+                          disabled type="radio" value="ดี">
+                        <label for="writing_other_lang3" class="custom-control-label">ดี</label>
+                      </div>
+                      <div class="custom-control custom-radio">
+                        <input id="writing_other_lang4" class="custom-control-input" name="writing_other_lang2"
+                          disabled type="radio" value="พอใช้">
+                        <label for="writing_other_lang4" class="custom-control-label">พอใช้</label>
+                      </div>
+                    </div>
+
+
+                  </td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+
+        <hr class="hr-primary">
+
+        <label>ความสามารถด้านคอมพิวเตอร์</label>
+        <div class="form-row">
+
+          <div class="form-group">
+            <label>สามารถพิมพ์ดีดภาษาไทยได้นาทีละ</label>
+            <div class="input-group">
+              <input disabled type="number" name="com_thai_write" id="com_thai_write" class="form-control col-6"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">คำ/นาที</span>
+              </div>
+            </div>
+          </div>
+          <div class="form-group">
+            <label>สามารถพิมพ์ดีดภาษาอังกฤษได้นาทีละ</label>
+            <div class="input-group">
+              <input disabled type="number" name="com_eng_write" id="com_eng_write" class="form-control col-6"
+                aria-describedby="basic-addon2">
+              <div class="input-group-append">
+                <span class="input-group-text" id="basic-addon2">คำ/นาที</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr>
+
+        <label>โปรแกรมคอมพิวเตอร์</label>
+        <div class="form-group ">
+          <input disabled type="text" name="com_lang1" id="com_lang1" class="form-control col-6">
+          <input disabled type="text" name="com_lang2" id="com_lang2" class="form-control col-6">
+          <input disabled type="text" name="com_lang3" id="com_lang3" class="form-control col-6">
+
+        </div>
+
+        <hr class="hr-primary">
+
+        <div class="form-row">
+
+          <div class="form-group col-3">
+            <label>ความสามารถพิเศษอื่นๆ</label>
+            <input disabled type="text" name="any_abilites1" id="any_abilites1" class="form-control">
+            <input disabled type="text" name="any_abilites2" id="any_abilites2" class="form-control">
+          </div>
+
+          <div class="form-group col-3">
+            <label>งานอดิเรก</label>
+            <input disabled type="text" name="hobblies1" id="hobblies1" class="form-control">
+            <input disabled type="text" name="hobblies2" id="hobblies2" class="form-control">
+          </div>
+        </div>
+
+        <hr class="hr-primary">
+        <div class="form-row">
+
+          <div class="form-group">
+            <label>สามารถขับขี่รถยนต์</label>
+            <div class="form-row">
+              <div class="custom-control custom-radio">
+                <input id="driver_ability1" class="custom-control-input driver_ability" name="driver_ability" disabled
+                  type="radio" value="ได้">
+                <label for="driver_ability1" class="custom-control-label">ได้</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="driver_ability2" class="custom-control-input driver_ability" name="driver_ability" disabled
+                  type="radio" value="ไม่ได้">
+                <label for="driver_ability2" class="custom-control-label">ไม่ได้</label>
+              </div>
+            </div>
+
+            <div class="driver_ability" style="display:none;">
+              <div class="driver_car">
+
+                <label>ใบอนุญาติ</label>
+                <input disabled type="text" name="driver_type" id="driver_type" class="form-control">
+
+                <label>เลขที่</label>
+                <input disabled type="number" name="driver_id" id="driver_id" class="form-control">
+
+                <label>จังหวัด</label>
+                <input disabled type="text" name="driver_province" id="driver_province" class="form-control">
+
+                <label>ออกให้เมื่อวันที่</label>
+                <input disabled type="date" name="date_card_driver" id="date_card_driver" class="form-control">
+              </div>
+            </div>
+          </div>
+
+
+
+          <div class="form-group">
+            <label>สามารถขับรถจักรยานยนต์</label>
+            <div class="form-row">
+              <div class="custom-control custom-radio">
+                <input id="motorcycle_ability1" class="custom-control-input motorcycle_ability" name="motorcycle_ability"
+                  disabled type="radio" value="ได้">
+                <label for="motorcycle_ability1" class="custom-control-label">ได้</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="motorcycle_ability2" class="custom-control-input motorcycle_ability" name="motorcycle_ability"
+                  disabled type="radio" value="ไม่ได้">
+                <label for="motorcycle_ability2" class="custom-control-label">ไม่ได้</label>
+              </div>
+            </div>
+
+
+            <div class="motorcycle_ability" style="display:none;">
+              <div class="driver_car">
+                <label>ใบอนุญาติ</label>
+                <input disabled type="text" name="driver_type_motorcycle" id="driver_type_motorcycle" class="form-control">
+
+                <label>เลขที่</label>
+                <input disabled type="number" name="driver_id_motorcycle" id="driver_id_motorcycle" class="form-control">
+
+                <label>จังหวัด</label>
+                <input disabled type="text" name="driver_province_motorcycle" id="driver_province_motorcycle" class="form-control">
+
+                <label>ออกให้เมื่อวันที่</label>
+                <input disabled type="date" name="date_card_motorcycle" id="date_card_motorcycle" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <p>
+          <a href="form5.html?edit=form5">แก้ไข Form5</a>
+        </p>
+      </fieldset>
+    </form>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <hr>
+
+    <form action="" id="form6" class="container_data">
+      <fieldset class="animated-box in">
+        <div class="table100 ver5 m-b-110 ">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head head1">
+                <th class="column100 column1 " data-column="column1">บุคคลที่ติดต่อได้โดยไม่ใช่ญาติพี่น้อง</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="fieldset-content" id="page6">
+
+          <div class="table100 ver5 m-b-110">
+            <table data-vertable="ver5">
+              <thead>
+                <tr class="row100 head">
+                  <th class="column100 column1" id="column1" data-column="column1">ชื่อ-นามสกุล</th>
+                  <th class="column100 column2" id="column2" data-column="column2">ความสัมพันธ์</th>
+                  <th class="column100 column3" id="column3" data-column="column3">อาชีพ</th>
+                  <th class="column100 column4" id="column4" data-column="column4">สถานที่ทำงาน/โทรศัพท์</th>
+
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="row100">
+                  <td><input name="fri_name1" id="fri_name1" disabled type="text" class="column100 column1 form-control"
+                      id="column1" data-column="column1"></td>
+
+                  <td><input name="fri_rela1" id="fri_rela1" disabled type="text" class="column100 column2 form-control"
+                      id="column2" data-column="column2"></td>
+
+                  <td><input name="fri_career1" id="fri_career1" disabled type="text" class="column100 column3 form-control"
+                      id="column3" data-column="column3"></td>
+
+                  <td><input name="fri_office_tel1" id="fri_office_tel1" disabled type="text" class="column100 column4 form-control"
+                      id="column4" data-column="column4"></td>
+                </tr>
+
+                <tr class="row100">
+                  <td><input name="fri_name2" id="fri_name2" disabled type="text" class="column100 column1 form-control"
+                      id="column1" data-column="column1"></td>
+
+                  <td><input name="fri_rela2" id="fri_rela2" disabled type="text" class="column100 column2 form-control"
+                      id="column2" data-column="column2"></td>
+
+                  <td><input name="fri_career2" id="fri_career2" disabled type="text" class="column100 column3 form-control"
+                      id="column3" data-column="column3"></td>
+
+                  <td><input name="fri_office_tel2" id="fri_office_tel2" disabled type="text" class="column100 column4 form-control"
+                      id="column4" data-column="column4"></td>
+                </tr>
+
+                <tr class="row100">
+                  <td><input name="fri_name3" id="fri_name3" disabled type="text" class="column100 column1 form-control"
+                      id="column1" data-column="column1"></td>
+
+                  <td><input name="fri_rela3" id="fri_rela3" disabled type="text" class="column100 column2 form-control"
+                      id="column2" data-column="column2"></td>
+
+                  <td><input name="fri_career3" id="fri_caree3" disabled type="text" class="column100 column3 form-control"
+                      id="column3" data-column="column3"></td>
+
+                  <td><input name="fri_office_tel" id="fri_office_tel" disabled type="text" class="column100 column4 form-control"
+                      id="column4" data-column="column4"></td>
+                </tr>
+
+                <tr class="row100">
+                  <td><input name="fri_name4" id="fri_name4" disabled type="text" class="column100 column1 form-control"
+                      id="column1" data-column="column1"></td>
+
+                  <td><input name="fri_rela4" id="fri_rela4" disabled type="text" class="column100 column2 form-control"
+                      id="column2" data-column="column2"></td>
+
+                  <td><input name="fri_career4" id="fri_career4" disabled type="text" class="column100 column3 form-control"
+                      id="column3" data-column="column3"></td>
+
+                  <td><input name="fri_office_tel4" id="fri_office_tel4" disabled type="text" class="column100 column4 form-control"
+                      id="column4" data-column="column4"></td>
+                </tr>
+
+                <tr class="row100">
+                  <td><input name="fri_name5" id="fri_name5" disabled type="text" class="column100 column1 form-control"
+                      id="column1" data-column="column1"></td>
+
+                  <td><input name="fri_rela5" id="fri_rela5" disabled type="text" class="column100 column2 form-control"
+                      id="column2" data-column="column2"></td>
+
+                  <td><input name="fri_career5" id="fri_career5" disabled type="text" class="column100 column3 form-control"
+                      id="column3" data-column="column3"></td>
+
+                  <td><input name="fri_office_tel5" id="fri_office_tel5" disabled type="text" class="column100 column4 form-control"
+                      id="column4" data-column="column4"></td>
+                </tr>
+
+                <tr class="row100">
+                  <td><input name="fri_name6" id="fri_name6" disabled type="text" class="column100 column1 form-control"
+                      id="column1" data-column="column1"></td>
+
+                  <td><input name="fri_rela6" id="fri_rela6" disabled type="text" class="column100 column2 form-control"
+                      id="column2" data-column="column2"></td>
+
+                  <td><input name="fri_career6" id="fri_career6" disabled type="text" class="column100 column3 form-control"
+                      id="column3" data-column="column3"></td>
+
+                  <td><input name="fri_office_tel6" id="fri_office_tel6" disabled type="text" class="column100 column4 form-control"
+                      id="column4" data-column="column4"></td>
+                </tr>
+            </table>
+          </div>
+
+          <hr class="hr-primary">
+
+          <div class="table100 ver5 m-b-110 ">
+            <table data-vertable="ver5">
+              <thead>
+                <tr class="row100 head head1">
+                  <th class="column100 column1 " data-column="column1">ในกรณีเร่งด่วนผู้ใกล้ชิดที่สามารถติดต่อข้าพเจ้าได้</th>
+                </tr>
+              </thead>
+            </table>
+          </div>
+
+          <div class="form-row">
+            <div class="col-3">
+              <label>ชื่อ</label>
+              <input disabled type="text" name="EM_Fname" id="EM_Fname" class="form-control">
+            </div>
+            <div class="col-3">
+              <label>นามสกุล</label>
+              <input disabled type="text" name="EM_Lname" id="EM_Lname" class="form-control">
+            </div>
+            <div class="col-3">
+              <label>ความสัมพันธ์</label>
+              <input disabled type="text" name="EM_relation" id="EM_relation" class="form-control">
+            </div>
+            <div class="col-3">
+              <label>อาชีพ</label>
+              <input disabled type="text" name="EM_Occupation" id="EM_Occupation" class="form-control">
+            </div>
+          </div>
+          <div class="form-row">
+            <div class="col-6">
+              <label>สถานที่ติดต่อ/เบอร์โทร</label>
+              <input disabled type="text" name="EM_phone" id="EM_phone" class="form-control">
+            </div>
+          </div>
+        </div>
+        <a href="form6.html?edit=form6">แก้ไข Form6</a>
+      </fieldset>
+    </form>
+
+    <hr>
+
+
+    <form action="" id="form9" class="container_data">
+      <fieldset class="animated-box in">
+        <div class="table100 ver5 m-b-110 ">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head head1">
+                <th class="column100 column1 " data-column="column1">สุขภาพ</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+        <div class="fieldset-content" id="page9">
+
+          <div class="form-group">
+            <label>ท่านเคยเป็นโรคเรื้อรัง หรือ โรคติดต่อหรือไม่</label>
+            <div class="form-row">
+              <div class="custom-control custom-radio">
+                <input id="serious_sickness1" class="custom-control-input serious_sickness" name="serious_sickness"
+                  disabled type="radio" onclick="show3();" value="เคย">
+                <label for="serious_sickness1" class="custom-control-label">เคย</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="serious_sickness2" class="custom-control-input serious_sickness" name="serious_sickness"
+                  disabled type="radio" onclick="show4();" value="ไม่เคย" />
+                <label for="serious_sickness2" class="custom-control-label">ไม่เคย</label>
+              </div>
+            </div>
+
+            <div class="serious_sickness" style="display:none;">
+              <div class="col-3">
+                <input disabled type="text" name="ser_sick1" id="ser_sick1" class="form-control ">
+              </div>
+
+              <div class="col-3">
+                <input disabled type="text" name="ser_sick2" id="ser_sick2" class="form-control ">
+              </div>
+
+              <div class="col-3">
+                <input disabled type="text" name="ser_sick3" id="ser_sick3" class="form-control ">
+
+              </div>
+            </div>
+          </div>
+
+          <hr class="hr-primary">
+
+          <!--disease.... คือ  โรคประจำตัว -->
+          <div class="form-group">
+
+            <label>ท่านมีโรคประจำตัวหรือไม่</label>
+            <div class="form-row">
+              <div class="custom-control custom-radio">
+                <input id="disease1" disabled type="radio" class="custom-control-input disease" name="disease" value="มี">
+                <label for="disease1" class="custom-control-label">มี</label>
+              </div>
+              <div class="custom-control custom-radio">
+                <input id="disease2" disabled type="radio" class="custom-control-input disease" name="disease" value="ไม่มี">
+                <label for="disease2" class="custom-control-label">ไม่มี</label>
+              </div>
+            </div>
+            <!--คำถามมีโรคประจำตัวหรือไม่-->
+            <div class="disease" style="display:none;">
+              <div class="col-3">
+                <input disabled type="text" name="disease10" id="disease10" class="form-control">
+              </div>
+              <div class="col-3">
+                <input disabled type="text" name="disease20" id="disease20" class="form-control">
+              </div>
+              <div class="col-3">
+                <input disabled type="text" name="disease3" id="disease3" class="form-control">
+              </div>
+              <div class="col-4">
+                <label>ในรอบ 1 ปี ก่อนวันสมัครท่านเคยป่วยเป็น</label>
+                <input disabled type="text" name="sickness" id="sickness" class="form-control ">
+              </div>
+            </div>
+          </div>
+          <hr class="hr-primary">
+        </div>
+        <p>
+          <a href="form9.html?edit=form9">แก้ไข Form9</a>
+        </p>
+      </fieldset>
+
+    </form>
+
+
+
+
+
+
+
+
+    <hr>
+
+    <form action="" id="form10" class="container_data">
+      <fieldset class="animated-box in">
+        <div class="table100 ver5 m-b-110 ">
+          <table data-vertable="ver5">
+            <thead>
+              <tr class="row100 head head1">
+                <th class="column100 column1 " data-column="column1">รายละเอียดอื่นๆ</th>
+              </tr>
+            </thead>
+          </table>
+        </div>
+
+
+        <div class="form-group">
+          <label>ท่านสมัครงานในบริษัทฯ นี้เป็นครั้งแรกหรือไม่</label>
+          <div class="form-row">
+            <div class="custom-control custom-radio">
+              <input id="first_regis1" disabled type="radio" class="custom-control-input first_regis" name="first_regis"
+                value="ใช่">
+              <label for="first_regis1" class="custom-control-label">ใช่</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="first_regis2" disabled type="radio" class="custom-control-input first_regis" name="first_regis"
+                value="ไม่ใช่">
+              <label for="first_regis2" class="custom-control-label">ไม่ใช่</label>
+            </div>
+
+            <div class="first_regis" style="display:none;">
+              <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">เป็นครั้งที่</span>
+                </div>
+                <input disabled type="number" name="first_regis3" id="first_regis3" class="form-control"
+                  aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <hr class="hr-primary">
+
+        <div class="form-group">
+          <label>ท่านสามารถออกต่างจังหวัด ได้หรือไม่</label>
+          <div class="form-row">
+            <div class="custom-control custom-radio">
+              <input id="outside1" disabled type="radio" class="custom-control-input outside" name="outside" value="ได้">
+              <label for="outside1" class="custom-control-label">ได้</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="outside2" class="custom-control-input outside" name="outside" disabled type="radio" value="ไม่ได้">
+              <label for="outside2" class="custom-control-label">ไม่ได้</label>
+            </div>
+
+
+            <div class="outside" style="display:none;">
+              <div class="input-group mb-4">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">เพราะ</span>
+                </div>
+                <input disabled type="number" name="outside3" id="outside3" class="form-control" aria-describedby="basic-addon1">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="hr-primary">
+
+        <div class="form-group">
+          <label>ท่านมีญาติ หรือเพื่อนในบริษัทฯนี้หรือไม่</label>
+          <div class="form-row">
+            <div class="custom-control custom-radio">
+              <input id="acquain1" disabled type="radio" class="custom-control-input acquain" name="acquain" value="มี">
+              <label for="acquain1" class="custom-control-label">มี</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="acquain2" class="custom-control-input acquain" name="acquain" disabled type="radio" value="ไม่มี">
+              <label for="acquain2" class="custom-control-label">ไม่มี</label>
+            </div>
+          </div>
+
+          <div class="acquain" style="display:none;">
+            <div class="form-row">
+              <div class="col-3">
+                <label>ชื่อ-นามสกุล</label>
+                <input disabled type="text" name="acquain_name" id="acquain_name" class="form-control">
+              </div>
+              <div class="col-3">
+                <label>ความสัมพันธ์ </label>
+                <div class="form-holder">
+                  <input disabled type="text" name="acquain_rela" id="acquain_rela" class="form-control">
+                </div>
+              </div>
+              <div class="col-3">
+                <label>หน่วยงาน </label>
+                <div class="form-holder">
+                  <input disabled type="text" name="acquain_depart" id="acquain_depart" class="form-control">
+                </div>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="col-3">
+                <label>ชื่อ-นามสกุล</label>
+                <input disabled type="text" name="acquain_name2" id="acquain_name2" class="form-control">
+              </div>
+              <div class="col-3">
+                <label>ความสัมพันธ์ </label>
+                <div class="form-holder">
+                  <input disabled type="text" name="acquain_rela2" id="acquain_rela2" class="form-control">
+                </div>
+              </div>
+              <div class="col-3">
+                <label>หน่วยงาน </label>
+                <div class="form-holder">
+                  <input disabled type="text" name="acquain_depart2" id="acquain_depart2" class="form-control">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="hr-primary">
+
+        <div class="form-group">
+          <label>ท่านเคยถูกจำคุกหรือต้องคำพิพากษาถึงที่สุดในคดีอาญาหรือไม่</label>
+          <div class="form-row">
+            <div class="custom-control custom-radio">
+              <input id="prison1" disabled type="radio" class="custom-control-input prison" name="prison" value="เคย">
+              <label for="prison1" class="custom-control-label">เคย</label>
+            </div>
+
+            <div class="custom-control custom-radio">
+              <input id="prison2" class="custom-control-input prison" name="prison" disabled type="radio" value="ไม่เคย">
+              <label for="prison2" class="custom-control-label">ไม่เคย</label>
+            </div>
+
+            <div class="prison" style="display:none;">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">เนื่องจาก</span>
+                </div>
+                <input disabled type="text" name="prison3" id="prison3" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <hr class="hr-primary">
+
+        <div class="form-group">
+          <label>ปัจจุบันท่านเป็นสมาชิกชมรมหรือสมาคมหรือไม่</label>
+          <div class="form-row">
+            <div class="custom-control custom-radio">
+              <input id="my_club1" disabled type="radio" class="custom-control-input my_club" name="my_club" value="เป็น">
+              <label for="my_club1" class="custom-control-label">เป็น</label>
+            </div>
+            <div class="custom-control custom-radio">
+              <input id="my_club2" class="custom-control-input my_club" name="my_club" disabled type="radio" value="ไม่เป็น">
+              <label for="my_club2" class="custom-control-label">ไม่เป็น</label>
+            </div>
+
+            <div class="my_club" style="display:none;">
+              <div class="input-group mb-3">
+                <div class="input-group-prepend">
+                  <span class="input-group-text" id="basic-addon1">ชมรม/สมาคม</span>
+                </div>
+                <input disabled type="text" name="my_club3" id="my_club3" class="form-control">
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <hr class="hr-primary">
+
+        <div class="fieldset-content">
+          <div class="table100 ver5 m-b-110">
+            <table data-vertable="ver5">
+              <thead>
+                <tr class="row100 head">
+                  <th class="column100 column1" id="column1" data-column="column1">สวัสดิการอื่นจากทีทำงานปัจจุบันล่าสุดต่อเดือน</th>
+                  <th class="column100 column2" data-column="column2"></th>
+
+                </tr>
+              </thead>
+
+              <tbody>
+
+
+                <tr class="row100">
+                  <td class="column100 column1" data-column="column1">เงินโบนัส</td>
+                  <td>
+                    <div class="input-group">
+                      <input name="my_bonus" id="my_bonus" disabled type="number" class="column100 column2 form-control col-3"
+                        data-column="column2">
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">บาท</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="row100">
+                  <td class="column100 column1" data-column="column1">เงินกองทุนสำรองเลี้ยงชีพ</td>
+                  <td>
+                    <div class="input-group">
+                      <input name="my_reserve" id="my_reserve" disabled type="number" class="column100 column2 form-control col-3"
+                        data-column="column2">
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">บาท</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="row100">
+                  <td class="column100 column1" data-column="column1">ค่ารักษาพยาบาล</td>
+                  <td>
+                    <div class="input-group">
+                      <input name="my_medical" id="my_medical" disabled type="number" class="column100 column2 form-control col-3"
+                        data-column="column2">
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">บาท</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="row100">
+                  <td class="column100 column1" data-column="column1">ประกันชีวิต</td>
+                  <td>
+                    <div class="input-group">
+                      <input name="Life_insurance" id="Life_insurance" disabled type="number" class="column100 column2 form-control col-3"
+                        data-column="column2">
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">บาท</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="row100">
+                  <td class="column100 column1" data-column="column1">ค่าตำแหน่ง</td>
+                  <td>
+                    <div class="input-group">
+                      <input name="Position_value" id="Position_value" disabled type="number" class="column100 column2 form-control col-3"
+                        data-column="column2">
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">บาท</span>
+                      </div>
+                    </div>
+                  </td>
+
+                </tr>
+
+                <tr class="row100">
+                  <td class="column100 column1" data-column="column1">ค่าพาหนะ</td>
+                  <td>
+                    <div class="input-group">
+                      <input name="traveling_expen" id="traveling_expen" disabled type="number" class="column100 column2 form-control col-3"
+                        data-column="column2">
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">บาท</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="row100">
+                  <td class="column100 column1" data-column="column1">ค่าครองชีพ/เบี้ยขยัน</td>
+                  <td>
+                    <div class="input-group">
+                      <input name="diligence" id="diligence" disabled type="number" class="column100 column2 form-control col-3"
+                        data-column="column2">
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">บาท</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+
+                <tr class="row100">
+                  <td class="column100 column1" data-column="column1">เงินช่วยเหลือ/อื่นๆ</td>
+                  <td>
+                    <div class="input-group">
+                      <input name="Subsidy" id="Subsidy" disabled type="number" class="column100 column2 form-control col-3"
+                        data-column="column2">
+                      <div class="input-group-append">
+                        <span class="input-group-text" id="basic-addon2">บาท</span>
+                      </div>
+                    </div>
+                  </td>
+                </tr>
+            </table>
+          </div>
+        </div>
+        <a href="form10.html?edit=form10">แก้ไข Form10</a>
+
+      </fieldset>
+    </form>
+  </div>
+
+  <script src="getDataStorageForm1.js"></script>
+  <script src="getDataStorageForm2.js"></script>
+  <script src="getDataStorageForm3.js"></script>
+  <script src="getDataStorageForm4.js"></script>
+  <script src="getDataStorageForm5.js"></script>
+  <script src="getDataStorageForm6.js"></script>
+  <script src="getDataStorageForm9.js"></script>
+  <script src="getDataStorageForm10.js"></script>
+
+  <!-- <script>
+    $(document).ready(function(){
+      var urlParams = location.search.substring(1).split('&'),
+      params = {};
+
+      urlParams.forEach(function(el){
+          var tmpArr = el.split('=');
+          params[tmpArr[0]] = tmpArr[1];
+      });
+            
+      var editSuccess = params['edit-success'];
+      console.log(edit);
+
+    })
+  </script> -->
+</body>
+
+</html>

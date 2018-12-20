@@ -1,0 +1,681 @@
+<form action="/validate/form5validate" method="post" id="Form5" class="needs-validation container_PA" novalidate>
+
+
+
+    <script>
+        $("#Form5").submit(function () {
+
+        if ($("#speaking_thai1").is(':checked')) {
+        sessionStorage.speaking_thai = $("#speaking_thai1").val();
+      } 
+      else if ($("#speaking_thai2").is(':checked')) {
+        sessionStorage.speaking_thai = $("#speaking_thai2").val();
+      } 
+
+      if ($("#reading_thai1").is(':checked')) {
+        sessionStorage.reading_thai = $("#reading_thai1").val();
+      }
+       else if ($("#reading_thai2").is(':checked')) {
+        sessionStorage.reading_thai = $("#reading_thai2").val();
+      }
+      if ($("#writing_thai1").is(':checked')) {
+        sessionStorage.writing_thai = $("#writing_thai1").val();
+      } 
+      else if ($("#writing_thai2").is(':checked')) {
+        sessionStorage.writing_thai = $("#writing_thai2").val();
+      }
+
+//====================================================================================================================
+
+       if ($("#speaking_eng1").is(':checked')) {
+        sessionStorage.speaking_eng = $("#speaking_eng1").val();
+      } 
+      else if ($("#speaking_eng2").is(':checked')) {
+        sessionStorage.speaking_eng = $("#speaking_eng2").val();
+      } 
+
+      if ($("#reading_eng1").is(':checked')) {
+        sessionStorage.reading_eng = $("#reading_eng1").val();
+      }
+       else if ($("#reading_eng2").is(':checked')) {
+        sessionStorage.reading_eng = $("#reading_eng2").val();
+      }
+      if ($("#writing_eng1").is(':checked')) {
+        sessionStorage.writing_eng = $("#writing_eng1").val();
+      } 
+      else if ($("#writing_eng2").is(':checked')) {
+        sessionStorage.writing_eng = $("#writing_eng2").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#speaking_other_lang1").is(':checked')) {
+        sessionStorage.speaking_other_lang = $("#speaking_other_lang1").val();
+      } 
+      else if ($("#speaking_other_lang2").is(':checked')) {
+        sessionStorage.speaking_other_lang = $("#speaking_other_lang2").val();
+      } 
+
+      if ($("#reading_other_lang1").is(':checked')) {
+        sessionStorage.reading_other_lang = $("#reading_other_lang1").val();
+      }
+       else if ($("#reading_other_lang2").is(':checked')) {
+        sessionStorage.reading_other_lang = $("#reading_other_lang2").val();
+      }
+      if ($("#writing_other_lang1").is(':checked')) {
+        sessionStorage.writing_other_lang = $("#writing_other_lang1").val();
+      } 
+      else if ($("#writing_other_lang2").is(':checked')) {
+        sessionStorage.writing_other_lang = $("#writing_other_lang2").val();
+      }
+
+       //==================================================================================================================================
+
+      if ($("#speaking_other_lang3").is(':checked')) {
+        sessionStorage.speaking_other_lang = $("#speaking_other_lang3").val();
+      } 
+      else if ($("#speaking_other_lang4").is(':checked')) {
+        sessionStorage.speaking_other_lang = $("#speaking_other_lang4").val();
+      } 
+
+      if ($("#reading_other_lang3").is(':checked')) {
+        sessionStorage.reading_other_lang = $("#reading_other_lang3").val();
+      }
+       else if ($("#reading_other_lang4").is(':checked')) {
+        sessionStorage.reading_other_lang = $("#reading_other_lang4").val();
+      }
+      if ($("#writing_other_lang3").is(':checked')) {
+        sessionStorage.writing_other_lang = $("#writing_other_lang3").val();
+      } 
+      else if ($("#writing_other_lang4").is(':checked')) {
+        sessionStorage.writing_other_lang = $("#writing_other_lang4").val();
+      }
+      
+   //==================================================================================================================================
+
+      if ($("#driver_ability1").is(':checked')) {
+        sessionStorage.driver_ability = $("#driver_ability1").val();
+      } 
+      else if ($("#driver_ability2").is(':checked')) {
+        sessionStorage.driver_ability = $("#driver_ability2").val();
+      }
+
+      //==================================================================================================================================
+
+        if ($("#motorcycle_ability1").is(':checked')) {
+        sessionStorage.motorcycle_ability = $("#motorcycle_ability1").val();
+      } 
+      else if ($("#motorcycle_ability2").is(':checked')) {
+        sessionStorage.motorcycle_ability = $("#motorcycle_ability2").val();
+      }
+      
+
+    });
+</script>
+
+    <script>
+        $(document).ready(function () { 
+	  //wไทย
+	  var speaking_thai = sessionStorage.getItem('speaking_thai');	 
+
+	  if(speaking_thai == 'ดี') {
+		$("#speaking_thai1").attr('checked', 'checked');
+	  } else if(speaking_thai == 'พอใช้') {
+		$("#speaking_thai2").attr('checked', 'checked');
+	  }
+
+       var reading_thai = sessionStorage.getItem('reading_thai');	      
+	  if(reading_thai == 'ดี') {
+		$("#reading_thai1").attr('checked', 'checked');
+	  } else if(reading_thai == 'พอใช้'){
+		$("#reading_thai2").attr('checked', 'checked');
+	  }
+
+       var writing_thai = sessionStorage.getItem('writing_thai');	      
+	  if(writing_thai == 'ดี') {
+		$("#writing_thai1").attr('checked', 'checked');
+	  } else if(writing_thai == 'พอใช้'){
+		$("#writing_thai2").attr('checked', 'checked');
+	  }
+
+//อังกฤษ
+      var speaking_eng = sessionStorage.getItem('speaking_eng');	      
+	  if(speaking_eng == 'ดี') {
+		$("#speaking_eng1").attr('checked', 'checked');
+	  } else if(speaking_eng == 'พอใช้'){
+		$("#speaking_eng2").attr('checked', 'checked');
+	  }
+
+       var reading_eng = sessionStorage.getItem('reading_eng');	      
+	  if(reading_eng == 'ดี') {
+		$("#reading_eng1").attr('checked', 'checked');
+	  } else if(reading_eng == 'พอใช้'){
+		$("#reading_eng2").attr('checked', 'checked');
+	  }
+
+       var writing_eng = sessionStorage.getItem('writing_eng');	      
+	  if(writing_eng == 'ดี') {
+		$("#writing_eng1").attr('checked', 'checked');
+	  } else if(writing_eng == 'พอใช้'){
+		$("#writing_eng2").attr('checked', 'checked');
+	  }
+
+//ภาษาอื่นๆ 1
+      var speaking_other_lang = sessionStorage.getItem('speaking_other_lang');	      
+	  if(speaking_other_lang == 'ดี') {
+		$("#speaking_other_lang1").attr('checked', 'checked');
+	  } else if(speaking_other_lang == 'พอใช้'){
+		$("#speaking_other_lang2").attr('checked', 'checked');
+	  }
+
+       var reading_other_lang = sessionStorage.getItem('reading_other_lang');	      
+	  if(reading_other_lang == 'ดี') {
+		$("#reading_other_lang1").attr('checked', 'checked');
+	  } else if(reading_other_lang1 == 'พอใช้'){
+		$("#reading_other_lang2").attr('checked', 'checked');
+	  }
+
+       var writing_other_lang = sessionStorage.getItem('writing_other_lang');	      
+	  if(writing_other_lang == 'ดี') {
+		$("#writing_other_lang1").attr('checked', 'checked');
+	  } else if(writing_other_lang == 'พอใช้'){
+		$("#writing_other_lang2").attr('checked', 'checked');
+	  }
+	  
+      
+//ภาษาอื่นๆ 2
+      var speaking_other_lang = sessionStorage.getItem('speaking_other_lang');	      
+	  if(speaking_other_lang == 'ดี') {
+		$("#speaking_other_lang3").attr('checked', 'checked');
+	  } else if(speaking_other_lang == 'พอใช้'){
+		$("#speaking_other_lang4").attr('checked', 'checked');
+	  }
+
+       var reading_other_lang = sessionStorage.getItem('reading_other_lang');	      
+	  if(reading_other_lang == 'ดี') {
+		$("#reading_other_lang3").attr('checked', 'checked');
+	  } else if(reading_other_lang == 'พอใช้'){
+		$("#reading_other_lang4").attr('checked', 'checked');
+	  }
+
+       var writing_other_lang = sessionStorage.getItem('writing_other_lang');	      
+	  if(writing_other_lang == 'ดี') {
+		$("#writing_other_lang3").attr('checked', 'checked');
+	  } else if(writing_other_lang == 'พอใช้'){
+		$("#writing_other_lang4").attr('checked', 'checked');
+	  }
+
+
+
+      var driver_ability = sessionStorage.getItem('driver_ability');	      
+	  if(driver_ability == 'ได้') {
+		$("#driver_ability1").attr('checked', 'checked');
+        $('.driver_ability').show();
+
+	  } else if(driver_ability == 'ไม่ได้'){
+		$("#driver_ability2").attr('checked', 'checked');
+	  }
+
+       var motorcycle_ability = sessionStorage.getItem('motorcycle_ability');	      
+	  if(motorcycle_ability == 'ได้') {
+		$("#motorcycle_ability1").attr('checked', 'checked');
+        $('.motorcycle_ability').show();
+	  } else if(motorcycle_ability == 'ไม่ได้'){
+		$("#motorcycle_ability2").attr('checked', 'checked');
+	  }
+	  
+    });
+    </script>
+
+    <div id="ribbon"></div>
+    <div class="form-row">
+        <ul class="mcd-menu">
+            <li>
+                <a href="/form1">
+                    <img src="/stylesheets/png/009-one.png" width="25" height="25">
+                    <strong>ประวัติส่วนตัว</strong>
+                    <small>Personal Data</small>
+
+                </a>
+            </li>
+            <li>
+                <a href="/form2">
+                    <img src="/stylesheets/png/008-two.png" width="25" height="25">
+                    <strong>รายละเอียดครอบครัว</strong>
+                    <small>Family Data</small>
+
+                </a>
+            </li>
+            <li>
+                <a href="/form3">
+                    <img src="/stylesheets/png/007-three.png" width="25" height="25">
+                    <strong>ประวัติการศึกษา</strong>
+                    <small>Education</small>
+                </a>
+            </li>
+            <li>
+                <a href="/form4">
+                    <img src="/stylesheets/png/006-four.png" width="25" height="25">
+                    <strong>ประวัติการทำงาน/ประวัตการฝึกอบรม</strong>
+                    <small>Working Experience From Current Onwards</small>
+                </a>
+            </li>
+            <li>
+                <a href="/form5" id="nav-form5" class="active">
+                    <img src="/stylesheets/png/005-five.png" width="25" height="25">
+                    <strong>ความสามในการใช้ภาษาต่างประเทศ <br>และคอมพิวเตอร์</strong>
+                    <small>Languages and Computer Ability</small>
+                </a>
+            </li>
+            <li>
+                <a href="/form6" id="nav-form6">
+                    <img src="/stylesheets/png/004-six.png" width="25" height="25">
+                    <strong>บุคคลที่ติดต่อได้โดยไม่ใช่ญาติพี่น้อง/ <br> กรณีเร่งด่วนที่สามารถติดต่อข้าพเจ้าได้</strong>
+                    <small>name of persib not related to application to whom reference may be made/ Emergency Contact
+                    </small>
+                </a>
+            </li>
+            <li>
+                <a href="/form9">
+                    <img src="/stylesheets/png/003-seven.png" width="25" height="25">
+                    <strong>สุขภาพ</strong>
+                    <small>Health</small>
+                </a>
+            </li>
+            <li>
+                <a href="/form10">
+                    <img src="/stylesheets/png/002-eight.png" width="25" height="25">
+                    <strong>รายละเอียดอื่นๆ</strong>
+                    <small>Other</small>
+                </a>
+            </li>
+
+        </ul>
+        </nav>
+
+
+        <fieldset>
+            <h1>ความสามในการใช้ภาษาต่างประเทศและคอมพิวเตอร์ <br> (Languages and Computer Ability)</h1>
+
+            <label>ภาษาต่างประเทศ</label>
+            <h4>ภาษาไทย</h4>
+            <div class="fieldset-content">
+                <div class="table100 ver5 m-b-110">
+                    <table data-vertable="ver5">
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="column100 column1" id="column1" data-column="column1">พูด</th>
+                                <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
+                                <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="row100">
+                                <td>
+                                    <div class="form-row">
+                                        <div class="custom-control custom-radio">
+                                            <input id="speaking_thai1" class="custom-control-input" name="speaking_thai"
+                                                type="radio" value="ดี" value="{{ form5.speaking_thai }}">
+                                            <label for="speaking_thai1" class="custom-control-label">ดี</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input id="speaking_thai2" class="custom-control-input" name="speaking_thai"
+                                                type="radio" value="พอใช้" value="{{ form5.speaking_thai }}">
+                                            <label for="speaking_thai2" class="custom-control-label">พอใช้</label>
+                                        </div>
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    <div class="form-row">
+                                        <div class="custom-control custom-radio">
+                                            <input id="reading_thai1" class="custom-control-input" name="reading_thai" type="radio"
+                                                value="ดี" value="{{ form5.reading_thai }}">
+                                            <label for="reading_thai1" class="custom-control-label">ดี</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input id="reading_thai2" class="custom-control-input" name="reading_thai" type="radio"
+                                                value="พอใช้" value="{{ form5.reading_thai }}">
+                                            <label for="reading_thai2" class="custom-control-label">พอใช้</label>
+                                        </div>
+                                    </div>
+
+                                </td>
+
+                                <td>
+                                    <div class="form-row">
+                                        <div class="custom-control custom-radio">
+                                            <input id="writing_thai1" class="custom-control-input" name="writing_thai"
+                                                type="radio" value="ดี" value="{{ form5.writing_thai }}">
+                                            <label for="writing_thai1" class="custom-control-label">ดี</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input id="writing_thai2" class="custom-control-input" name="writing_thai"
+                                                type="radio" value="พอใช้" value="{{ form5.writing_thai }}">
+                                            <label for="writing_thai2" class="custom-control-label">พอใช้</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <h4>ภาษาอังกฤษ</h4>
+            <div class="fieldset-content">
+                <div class="table100 ver5 m-b-110">
+                    <table data-vertable="ver5">
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="column100 column1" id="column1" data-column="column1">พูด</th>
+                                <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
+                                <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="row100">
+                                <td>
+                                    <div class="form-row">
+                                        <div class="custom-control custom-radio">
+                                            <input id="speaking_eng1" class="custom-control-input" name="speaking_eng"
+                                                type="radio" value="ดี" value="{{ form5.speaking_eng }}">
+                                            <label for="speaking_eng1" class="custom-control-label">ดี</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input id="speaking_eng2" class="custom-control-input" name="speaking_eng"
+                                                type="radio" value="พอใช้" value="{{ form5.speaking_eng }}">
+                                            <label for="speaking_eng2" class="custom-control-label">พอใช้</label>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="form-row">
+                                        <div class="custom-control custom-radio">
+                                            <input id="reading_eng1" class="custom-control-input" name="reading_eng"
+                                                type="radio" value="ดี" value="{{ form5.reading_eng }}">
+                                            <label for="reading_eng1" class="custom-control-label">ดี</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input id="reading_eng2" class="custom-control-input" name="reading_eng"
+                                                type="radio" value="พอใช้" value="{{ form5.reading_eng }}">
+                                            <label for="reading_eng2" class="custom-control-label">พอใช้</label>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="form-row">
+                                        <div class="custom-control custom-radio">
+                                            <input id="writing_eng1" class="custom-control-input" name="writing_eng"
+                                                type="radio" value="ดี" value="{{ form5.writing_eng }}">
+                                            <label for="writing_eng1" class="custom-control-label">ดี</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input id="writing_eng2" class="custom-control-input" name="writing_eng"
+                                                type="radio" value="พอใช้" value="{{ form5.writing_eng }}">
+                                            <label for="writing_eng2" class="custom-control-label">พอใช้</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <h5>ภาษาอื่นๆ</h5>
+            <div class="fieldset-content">
+                <div class="table100 ver5 m-b-110">
+                    <table data-vertable="ver5">
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="column100 column1" id="column1" data-column="column1">พูด</th>
+                                <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
+                                <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="row100">
+                                <td>
+                                    <div class="form-row">
+                                        <div class="custom-control custom-radio">
+                                            <input id="speaking_other_lang1" class="custom-control-input" name="speaking_other_lang"
+                                                type="radio" value="ดี" value="{{ form5.speaking_other_lang }}">
+                                            <label for="speaking_other_lang1" class="custom-control-label">ดี</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input id="speaking_other_lang2" class="custom-control-input" name="speaking_other_lang"
+                                                type="radio" value="พอใช้" value="{{ form5.speaking_other_lang }}">
+                                            <label for="speaking_other_lang2" class="custom-control-label">พอใช้</label>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="form-row">
+                                        <div class="custom-control custom-radio">
+                                            <input id="reading_other_lang1" class="custom-control-input" name="reading_other_lang"
+                                                type="radio" value="ดี" value="{{ form5.reading_other_lang }}">
+                                            <label for="reading_other_lang1" class="custom-control-label">ดี</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input id="reading_other_lang2" class="custom-control-input" name="reading_other_lang"
+                                                type="radio" value="พอใช้" value="{{ form5.reading_other_lang }}">
+                                            <label for="reading_other_lang2" class="custom-control-label">พอใช้</label>
+                                        </div>
+                                    </div>
+                                </td>
+
+                                <td>
+                                    <div class="form-row">
+                                        <div class="custom-control custom-radio">
+                                            <input id="writing_other_lang1" class="custom-control-input" name="writing_other_lang"
+                                                type="radio" value="ดี" value="{{ form5.writing_other_lang }}">
+                                            <label for="writing_other_lang1" class="custom-control-label">ดี</label>
+                                        </div>
+                                        <div class="custom-control custom-radio">
+                                            <input id="writing_other_lang2" class="custom-control-input" name="writing_other_lang"
+                                                type="radio" value="พอใช้" value="{{ form5.writing_other_lang }}">
+                                            <label for="writing_other_lang2" class="custom-control-label">พอใช้</label>
+                                        </div>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <h5>ภาษาอื่นๆ</h5>
+            <div class="fieldset-content">
+                <div class="table100 ver5 m-b-110">
+                    <table data-vertable="ver5">
+                        <thead>
+                            <tr class="row100 head">
+                                <th class="column100 column1" id="column1" data-column="column1">พูด</th>
+                                <th class="column100 column2" id="column2" data-column="column2">อ่าน</th>
+                                <th class="column100 column3" id="column3" data-column="column3">เขียน</th>
+                            </tr>
+                        </thead>
+
+                        <tbody>
+                            <tr class="row100">
+                                <td>
+                                    <div class="form-row">
+                                    <div class="custom-control custom-radio">
+                                        <input id="speaking_other_lang3" class="custom-control-input" name="speaking_other_lang2" type="radio" value="ดี" value="{{ form5.speaking_other_lang2 }}">
+                                        <label for="speaking_other_lang3" class="custom-control-label" >ดี</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input id="speaking_other_lang4" class="custom-control-input" name="speaking_other_lang2" type="radio" value="พอใช้" value="{{ form5.speaking_other_lang2 }}">
+                                        <label for="speaking_other_lang4" class="custom-control-label" >พอใช้</label>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="form-row">
+                                    <div class="custom-control custom-radio">
+                                        <input id="reading_other_lang3" class="custom-control-input" name="reading_other_lang2" type="radio" value="ดี" value="{{ form5.reading_other_lang2 }}">
+                                        <label for="reading_other_lang3" class="custom-control-label" >ดี</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input id="reading_other_lang4" class="custom-control-input" name="reading_other_lang2" type="radio" value="พอใช้" value="{{ form5.reading_other_lang2 }}">
+                                        <label for="reading_other_lang4" class="custom-control-label" >พอใช้</label>
+                                    </div>
+                                </div>
+                            </td>
+
+                            <td>
+                                <div class="form-row">
+                                    <div class="custom-control custom-radio">
+                                        <input id="writing_other_lang3" class="custom-control-input" name="writing_other_lang2" type="radio" value="ดี" value="{{ form5.writing_other_lang2 }}">
+                                        <label for="writing_other_lang3" class="custom-control-label" >ดี</label>
+                                    </div>
+                                    <div class="custom-control custom-radio">
+                                        <input id="writing_other_lang4" class="custom-control-input" name="writing_other_lang2" type="radio" value="พอใช้" value="{{ form5.writing_other_lang2 }}">
+                                        <label for="writing_other_lang4" class="custom-control-label" >พอใช้</label>
+                                    </div>
+                                </div>
+
+
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <hr class="hr-primary">
+
+            <label>ความสามารถด้านคอมพิวเตอร์</label>
+            <div class="form-row">
+
+                <div class="form-group">
+                    <label>สามารถพิมพ์ดีดภาษาไทยได้นาทีละ</label>
+                    <div class="input-group">
+                        <input type="number" name="com_thai_write" id="com_thai_write" class="form-control col-6"
+                            aria-describedby="basic-addon2" value="{{ form5.com_thai_write }}">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">คำ/นาที</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label>สามารถพิมพ์ดีดภาษาอังกฤษได้นาทีละ</label>
+                    <div class="input-group">
+                        <input type="number" name="com_eng_write" id="com_eng_write" class="form-control col-6"
+                            aria-describedby="basic-addon2" value="{{ form5.com_eng_write }}">
+                        <div class="input-group-append">
+                            <span class="input-group-text" id="basic-addon2">คำ/นาที</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <label>โปรแกรมคอมพิวเตอร์</label>
+            <div class="form-group ">
+                <input type="text" name="com_lang1" id="com_lang1" class="form-control col-6" value="{{ form5.com_lang1 }}">
+                <input type="text" name="com_lang2" id="com_lang2" class="form-control col-6" value="{{ form5.com_lang2 }}">
+                <input type="text" name="com_lang3" id="com_lang3" class="form-control col-6" value="{{ form5.com_lang3 }}">
+
+            </div value="{{ form5.com_eng_write }}">
+
+            <hr class="hr-primary">
+
+            <div class="form-row">
+
+                <div class="form-group col-3">
+                    <label>ความสามารถพิเศษอื่นๆ</label>
+                    <input type="text" name="any_abilites1" id="any_abilites1" class="form-control" value="{{ form5.any_abilites1 }}">
+                    <input type="text" name="any_abilites2" id="any_abilites2" class="form-control" value="{{ form5.any_abilites2 }}">
+                </div>
+
+                <div class="form-group col-3">
+                    <label>งานอดิเรก</label>
+                    <input type="text" name="hobblies1" id="hobblies1" class="form-control" value="{{ form5.hobblies1 }}">
+                    <input type="text" name="hobblies2" id="hobblies2" class="form-control" value="{{ form5.hobblies2 }}">
+                </div>
+            </div>
+
+            <hr class="hr-primary">
+            <div class="form-row">
+
+                    <div class="form-group">
+                    <label>สามารถขับขี่รถยนต์</label>
+                    <div class="form-row">
+                        <div class="custom-control custom-radio" >
+                            <input id="driver_ability1" class="custom-control-input driver_ability" name="driver_ability" type="radio" value="ได้" value="{{ form5.driver_ability }}">
+                            <label for="driver_ability1" class="custom-control-label" >ได้</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="driver_ability2" class="custom-control-input driver_ability" name="driver_ability" type="radio" value="ไม่ได้" value="{{ form5.driver_ability }}">
+                            <label for="driver_ability2" class="custom-control-label" >ไม่ได้</label>
+                        </div>
+                    </div>
+
+                    <div class="driver_ability" style="display:none;">
+                        <div class="driver_car">
+
+                            <label>ใบอนุญาติ</label>
+                            <input type="text" name="driver_type" id="driver_type" class="form-control">
+
+                            <label>เลขที่</label>
+                            <input type="number" name="driver_id" id="driver_id" class="form-control">
+
+                            <label>จังหวัด</label>
+                            <input type="text" name="driver_province" id="driver_province" class="form-control">
+
+                            <label>ออกให้เมื่อวันที่</label>
+                            <input type="date" name="date_card_driver" id="date_card_driver" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="form-group">
+                    <label>สามารถขับรถจักรยานยนต์</label>
+                    <div class="form-row">
+                        <div class="custom-control custom-radio">
+                            <input id="motorcycle_ability1" class="custom-control-input motorcycle_ability" name="motorcycle_ability" type="radio" value="ได้" value="{{ form5.motorcycle_ability }}">
+                            <label for="motorcycle_ability1" class="custom-control-label" >ได้</label>
+                        </div>
+                        <div class="custom-control custom-radio">
+                            <input id="motorcycle_ability2" class="custom-control-input motorcycle_ability" name="motorcycle_ability" type="radio" value="ไม่ได้" value="{{ form5.motorcycle_ability }}">
+                            <label for="motorcycle_ability2" class="custom-control-label" >ไม่ได้</label>
+                        </div>
+                    </div>
+
+
+                    <div class="motorcycle_ability" style="display:none;">
+                        <div class="driver_car">
+                            <label>ใบอนุญาติ</label>
+                            <input type="text" name="driver_type_motorcycle" id="driver_type_motorcycle" class="form-control">
+
+                            <label>เลขที่</label>
+                            <input type="number" name="driver_id_motorcycle" id="driver_id_motorcycle" class="form-control">
+
+                            <label>จังหวัด</label>
+                            <input type="text" name="driver_province_motorcycle" id="driver_province_motorcycle" class="form-control">
+
+                            <label>ออกให้เมื่อวันที่</label>
+                            <input type="date" name="date_card_motorcycle" id="date_card_motorcycle" class="form-control">
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <p>
+                <input type="submit">
+            </p>
+        </fieldset>
+    </div>
+</form>

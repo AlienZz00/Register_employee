@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+<head>
+    <title>เว็ปไซต์สมัครงาน</title>
+
+</head>
+
+<link rel="stylesheet" href="public/stylesheets/bootstrap.min.css">
+<link rel="stylesheet" href="public/stylesheets/main.css" type="text/css">
+<link rel="stylesheet" href="public/stylesheets/validationEngine.jquery.css" type="text/css" />
+<link rel="stylesheet" href="public/stylesheets/style-table.css">
+<link rel="stylesheet" href="public/stylesheets/Untitled-1.css">
+
+<!-- bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"></script>
+
+
+
+<script src="public/javascripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+<script src="public/javascripts/jquery.validationEngine-th.js" type="text/javascript" charset="utf-8"></script>
+<script src="public/javascripts/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+
+
+<script src="public/javascripts/insert-input.js"></script>
+
+<script>
+    $(document).ready(function () {
+        /*! Fades in page on load */
+        $('body').css('display', 'none');
+        $('body').fadeIn(600);
+      });
+    </script>
+
+<script>
+    $(document).ready(function(){
+        $("#form2").validationEngine();
+       });
+</script>
+
+<style>
+    @font-face {
+          font-family: 'Athiti';
+          src: url(public/font/Athiti-semibold.ttf);
+      }
+      
+      </style>
+
+<body>
+    <!-- <video autoplay loop id="video-background" muted plays-inline>
+                <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+              </video>-->
+    <div class="container_PA">
+
+        <form method="post" id="form2" class="needs-validation " novalidate>
+            <div class="form-row">
+                <ul class="mcd-menu">
+                    <li>
+                        <a href="index.html">
+                            <img src="public/stylesheets/png/009-one.png" width="25" height="25">
+                            <strong>ประวัติส่วนตัว</strong>
+                            <small>Personal Data</small>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form2.html" class="active">
+                            <img src="public/stylesheets/png/008-two.png" width="25" height="25">
+                            <strong>รายละเอียดครอบครัว</strong>
+                            <small>Family Data</small>
+
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form3.html">
+                            <img src="public/stylesheets/png/007-three.png" width="25" height="25">
+                            <strong>ประวัติการศึกษา</strong>
+                            <small>Education</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form4.html">
+                            <img src="public/stylesheets/png/006-four.png" width="25" height="25">
+                            <strong>ประวัติการทำงาน/ประวัตการฝึกอบรม</strong>
+                            <small>Working Experience From Current Onwards</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form5.html" id="nav-form5">
+                            <img src="public/stylesheets/png/005-five.png" width="25" height="25">
+                            <strong>ความสามในการใช้ภาษาต่างประเทศ <br>และคอมพิวเตอร์</strong>
+                            <small>Languages and Computer Ability</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form6.html" id="nav-form6">
+                            <img src="public/stylesheets/png/004-six.png" width="25" height="25">
+                            <strong>บุคคลที่ติดต่อได้โดยไม่ใช่ญาติพี่น้อง/ <br> กรณีเร่งด่วนที่สามารถติดต่อข้าพเจ้าได้</strong>
+                            <small>name of persib not related to application to whom reference may be made/ Emergency
+                                Contact </small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form9.html">
+                            <img src="public/stylesheets/png/003-seven.png" width="25" height="25">
+                            <strong>สุขภาพ</strong>
+                            <small>Health</small>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="form10.html">
+                            <img src="public/stylesheets/png/002-eight.png" width="25" height="25">
+                            <strong>รายละเอียดอื่นๆ</strong>
+                            <small>Other</small>
+                        </a>
+                    </li>
+
+                </ul>
+                </nav>
+
+
+                <fieldset>
+                    <div id="ribbon"></div>
+
+                    <div class="table100 ver5 m-b-110 ">
+                            <table data-vertable="ver5">
+                                    <thead>
+                                            <tr class="row100 head head1">
+                                                    <th class="column100 column1 " data-column="column1">รายละเอียดเกี่ยวกับครอบครัว</th>
+                                            </tr>
+                                    </thead>
+                            </table>
+                    </div>
+                
+
+
+                    <div class="form-group">
+                        <label>บิดา</label>
+
+
+                        <div class="form-row">
+                            <div class="col-3">
+                                <label>คำนำหน้าชื่อ</label>
+                                <select class="op-input120 custom-select" id="fa_title" name="fa_title" disabled>
+                                    <option selected value="นาย">นาย</option>
+                                </select>
+                            </div>
+                            <div class="col-3">
+                                <label>ชื่อ</label>
+                                <input type="text" class="form-control" id="fa_Fname" name="fa_Fname">
+                            </div>
+                            <div class="col-3">
+                                <label>นามสกุล</label>
+                                <input type="text" name="fa_Lname" id="fa_Lname" class="form-control">
+                            </div>
+                            <div class="col-3">
+                                <label>อายุ</label>
+                                <input type="number" name="fa_age" id="fa_age" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-3">
+                                <label>อาชีพ</label>
+                                <input type="text" name="fa_Occ" id="fa_Occ" class="form-control">
+                            </div>
+                            <div class="col-3">
+                                <label>สถานที่ทำงาน</label>
+                                <input type="text" name="fa_place" id="fa_place" class="form-control">
+                            </div>
+                            <div class="col-md-3">
+                                <label>โทรศัพท์</label>
+                                <input type="text" name="fa_tel" id="fa_tel" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <hr class="hr-primary">
+
+                    <div class="form-group">
+                        <label>มารดา</label>
+                        <div class="form-row">
+                            <div class="col-3">
+                                <label>คำนำหน้าชื่อ</label>
+                                <div class="select">
+                                    <select class="custom-select" name="ma_title" id="ma_title">
+                                        <option hidden>-- กรุณาเลือก --</option>
+                                        <option value="นาย">นาย</option>
+                                        <option value="นาง">นาง</option>
+                                        <option value="นางสาว">นางสาว</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-3">
+                                <label>ชื่อ</label>
+                                <input type="text" class="form-control" id="ma_Fname" name="ma_Fname">
+                            </div>
+                            <div class="col-3">
+                                <label>นามสกุล</label>
+                                <input type="text" name="ma_Lname" id="ma_Lname" class="form-control">
+                            </div>
+                            <div class="col-3">
+                                <label>อายุ</label>
+                                <input type="number" name="ma_age" id="ma_age" class="form-control">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="col-3">
+                                <label>อาชีพ</label>
+                                <input type="text" name="ma_Occ" id="ma_Occ" class="form-control">
+                            </div>
+                            <div class="col-3">
+                                <label>สถานที่ทำงาน</label>
+                                <input type="text" name="ma_place" id="ma_place" class="form-control">
+                            </div>
+                            <div class="col-3">
+                                <label>โทรศัพท์</label>
+                                <input type="text" name="ma_tel" id="ma_tel" class="form-control">
+                            </div>
+                        </div>
+                    </div>
+
+                    <hr class="hr-primary">
+
+
+
+                    <!--========================================================================-->
+
+                    <label>พี่น้อง</label>
+                    <div class="form-row">
+                        <div class="col-2">
+                            <label>พี่น้องร่วมบิดา-มารดาจำนวน</label>
+                            <div class="input-group">
+                                <input type="number" name="num_bro" id="num_bro" aria-describedby="basic-addon2" class="form-control validate[required]">
+                                <div class="input-group-append">
+                                    <span class="input-group-text" id="basic-addon2">คน</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+
+
+                    <div class="table table-responsive">
+                        <table class="table table-responsive table-striped table-bordered">
+                            <thead>
+                                <tr>
+                                    <td id="table1_name">ชื่อ-นามสกุล</td>
+                                    <td id="table1_age">อายุ</td>
+                                    <td id="table1_career">อาชีพ</td>
+                                    <td id="table1_where">สถานที่ทำงาน</td>
+                                    <td id="table1_tel">โทรศัพท์</td>
+                                </tr>
+                            </thead>
+                            <tbody id="TextBoxContainer">
+                                <td><input name="DynamicTextBox_name" id="DynamicTextBox_name" type="text" class="form-control" /></td>
+                                <td><input name="DynamicTextBox_age" id="DynamicTextBox_age" type="number" class="form-control" /></td>
+                                <td><input name="DynamicTextBox_career" id="DynamicTextBox_career" type="text" class="form-control" /></td>
+                                <td><input name="DynamicTextBox_where" id="DynamicTextBox_where" type="text" class="form-control" /></td>
+                                <td><input name="DynamicTextBox_tel" id="DynamicTextBox_tel" type="number" class="form-control" /></td>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <th colspan="5">
+                                        <button id="btnAdd" type="button" class="btn btn-outline-primary" data-toggle="tooltip"
+                                            data-original-title="Add more controls"><i class="glyphicon glyphicon-plus-sign"></i>
+                                            เพิ่ม</button></th>
+                                </tr>
+                            </tfoot>
+                        </table>
+                    </div>
+
+
+
+
+                    <button type="submit" id="btn_next" class="button"><span>ต่อไป &#8594;</span>
+
+                </fieldset>
+            </div>
+        </form>
+    </div>
+
+    <script src="getParamsFromUrl.js"></script>
+    <script src="getDataStorageForm2.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            if (!edit) {
+                $("#form2").submit(function () {
+                    $("#form2").attr("action", "form3.html");
+                    setSessionStorage();
+                });
+            } else {
+                $("#form2").submit(function () {
+                    setSessionStorage();
+                    $("#form2").attr("action", "data.html?edit-success=form2");
+                });
+            }
+
+            function setSessionStorage() {
+                sessionStorage.fa_title = $("#fa_title").val();
+                sessionStorage.fa_Fname = $("#fa_Fname").val();
+                sessionStorage.fa_Lname = $("#fa_Lname").val();
+                sessionStorage.fa_age = $("#fa_age").val();
+
+                sessionStorage.fa_Occ = $("#fa_Occ").val();
+                sessionStorage.fa_place = $("#fa_place").val();
+                sessionStorage.fa_tel = $("#fa_tel").val();
+
+                sessionStorage.ma_Fname = $("#ma_Fname").val();
+                sessionStorage.ma_Lname = $("#ma_Lname").val();
+                sessionStorage.ma_age = $("#ma_age").val();
+
+                sessionStorage.ma_title = $("#ma_title").val();
+                sessionStorage.ma_Occ = $("#ma_Occ").val();
+                sessionStorage.ma_place = $("#ma_place").val();
+                sessionStorage.ma_tel = $("#ma_tel").val();
+
+
+                sessionStorage.num_bro = $("#num_bro").val();
+                sessionStorage.DynamicTextBox_name = $("#DynamicTextBox_name").val();
+                sessionStorage.DynamicTextBox_age = $("#DynamicTextBox_age").val();
+                sessionStorage.DynamicTextBox_career = $("#DynamicTextBox_career").val();
+                sessionStorage.DynamicTextBox_where = $("#DynamicTextBox_where").val();
+                sessionStorage.DynamicTextBox_tel = $("#DynamicTextBox_tel").val();
+
+                sessionStorage.bro_name1 = $("#bro_name").val();
+                sessionStorage.bro_old1 = $("#bro_old1").val();
+                sessionStorage.bro_career1 = $("#bro_career1").val();
+                sessionStorage.bro_where1 = $("#bro_where1").val();
+                sessionStorage.bro_tel1 = $("#bro_tel1").val();
+            }
+
+        });
+    </script>
+</body>
+
+</html>

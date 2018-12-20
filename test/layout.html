@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>{{title}}</title>
+
+</head>
+
+<link rel="stylesheet" href="public/stylesheets/bootstrap.min.css">
+<link rel="stylesheet" href="public/stylesheets/main.css" type="text/css">
+<link rel="stylesheet" href="public/stylesheets/style-table.css">
+<link rel="stylesheet" href="public/stylesheets/validationEngine.jquery.css" type="text/css" />
+<link rel="stylesheet" href="public/stylesheets/Untitled-1.css">
+
+
+
+<!-- bootstrap -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+  crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+  crossorigin="anonymous"></script>
+
+
+  <script src="public/javascripts/webcam.min.js"></script>
+
+  <script src="public/javascripts/jquery-1.8.2.min.js" type="text/javascript"></script>
+  
+  <script src="public/javascripts/jquery.validationEngine-th.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="public/javascripts/jquery.validationEngine.js" type="text/javascript" charset="utf-8"></script>
+  
+  <script src="public/javascripts/jquery.thprovinceset.1.0.js"></script>
+  
+  <script src="public/javascripts/ClickSlide.js"></script>
+  <script src="public/javascripts/upload-img.js"></script>
+  <script src="public/javascripts/take-photo.js"></script>
+  <script src="public/javascripts/jsTable.js"></script>
+  <script src="public/javascripts/insert-input.js"></script>
+  <script src="public/javascripts/jquery.thpro2.js"></script>
+
+
+
+
+{{!-- <script>
+  $(document).ready(function () {
+    /*! Fades in page on load */
+    $('body').css('display', 'none');
+    $('body').fadeIn(600);
+  });
+</script>
+--}}
+
+<script>
+  $(document).ready(function(){
+        $("#Form1,#Form2,#Form3,#Form4,#Form5,#Form6,#Form9,#Form10").validationEngine();
+       });
+</script>
+
+
+
+{{!--
+=====================================================================================================================================================================================
+--}}
+
+<body>
+
+  <video autoplay loop id="video-background" muted plays-inline>
+    <source src="https://storage.googleapis.com/coverr-main/mp4/Mt_Baker.mp4" type="video/mp4">
+  </video>
+
+
+
+  <div class="main">
+
+    {{{body}}}
+
+
+  </div>
+
+
+  {{!--
+  =====================================================================================================================================================================================
+  --}}
+  <script>
+    $("#Form1").submit(function () {
+      sessionStorage.my_title = $("#my_title").val();
+      sessionStorage.my_blood_group = $("#my_blood_group").val();
+      sessionStorage.my_religion = $("#my_religion").val();
+      sessionStorage.parent_house = $("#parent_house").val();
+      sessionStorage.my_marrital_status = $("#my_marrital_status").val();
+
+    });
+  
+
+    //Form2
+    $("#Form2").submit(function () {
+      sessionStorage.ma_title = $("#ma_title").val();
+    });
+
+
+    //Form5 
+    $("#Form5").submit(function () {
+
+      if ($("#speaking_thai1").is(':checked')) {
+        sessionStorage.speaking_thai = $("#speaking_thai1").val();
+      } else if ($("#speaking_thai2").is(':checked')) {
+        sessionStorage.speaking_thai = $("#speaking_thai2").val();
+      }
+
+      if ($("#reading_thai1").is(':checked')) {
+        sessionStorage.reading_thai = $("#reading_thai1").val();
+      } else if ($("#reading_thai2").is(':checked')) {
+        sessionStorage.reading_thai = $("#reading_thai2").val();
+      }
+      if ($("#writing_thai1").is(':checked')) {
+        sessionStorage.writing_thai = $("#writing_thai1").val();
+      } else if ($("#writing_thai2").is(':checked')) {
+        sessionStorage.writing_thai = $("#writing_thai2").val();
+      }
+
+      //====================================================================================================================
+
+      if ($("#speaking_eng1").is(':checked')) {
+        sessionStorage.speaking_eng = $("#speaking_eng1").val();
+      } else if ($("#speaking_eng2").is(':checked')) {
+        sessionStorage.speaking_eng = $("#speaking_eng2").val();
+      }
+
+      if ($("#reading_eng1").is(':checked')) {
+        sessionStorage.reading_eng = $("#reading_eng1").val();
+      } else if ($("#reading_eng2").is(':checked')) {
+        sessionStorage.reading_eng = $("#reading_eng2").val();
+      }
+      if ($("#writing_eng1").is(':checked')) {
+        sessionStorage.writing_eng = $("#writing_eng1").val();
+      } else if ($("#writing_eng2").is(':checked')) {
+        sessionStorage.writing_eng = $("#writing_eng2").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#speaking_other_lang1").is(':checked')) {
+        sessionStorage.speaking_other_lang = $("#speaking_other_lang1").val();
+      } else if ($("#speaking_other_lang2").is(':checked')) {
+        sessionStorage.speaking_other_lang = $("#speaking_other_lang2").val();
+      }
+
+      if ($("#reading_other_lang1").is(':checked')) {
+        sessionStorage.reading_other_lang = $("#reading_other_lang1").val();
+      } else if ($("#reading_other_lang2").is(':checked')) {
+        sessionStorage.reading_other_lang = $("#reading_other_lang2").val();
+      }
+      if ($("#writing_other_lang1").is(':checked')) {
+        sessionStorage.writing_other_lang = $("#writing_other_lang1").val();
+      } else if ($("#writing_other_lang2").is(':checked')) {
+        sessionStorage.writing_other_lang = $("#writing_other_lang2").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#speaking_other_lang3").is(':checked')) {
+        sessionStorage.speaking_other_lang = $("#speaking_other_lang3").val();
+      } else if ($("#speaking_other_lang4").is(':checked')) {
+        sessionStorage.speaking_other_lang = $("#speaking_other_lang4").val();
+      }
+
+      if ($("#reading_other_lang3").is(':checked')) {
+        sessionStorage.reading_other_lang = $("#reading_other_lang3").val();
+      } else if ($("#reading_other_lang4").is(':checked')) {
+        sessionStorage.reading_other_lang = $("#reading_other_lang4").val();
+      }
+      if ($("#writing_other_lang3").is(':checked')) {
+        sessionStorage.writing_other_lang = $("#writing_other_lang3").val();
+      } else if ($("#writing_other_lang4").is(':checked')) {
+        sessionStorage.writing_other_lang = $("#writing_other_lang4").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#driver_ability1").is(':checked')) {
+        sessionStorage.driver_ability = $("#driver_ability1").val();
+      } else if ($("#driver_ability2").is(':checked')) {
+        sessionStorage.driver_ability = $("#driver_ability2").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#motorcycle_ability1").is(':checked')) {
+        sessionStorage.motorcycle_ability = $("#motorcycle_ability1").val();
+      } else if ($("#motorcycle_ability2").is(':checked')) {
+        sessionStorage.motorcycle_ability = $("#motorcycle_ability2").val();
+      }
+    });
+
+    //Form9
+    //==================================================================================================================================
+    $("#Form9").submit(function () {
+      if ($("#serious_sickness1").is(':checked')) {
+        sessionStorage.serious_sickness = $("#serious_sickness1").val();
+      } else if ($("#serious_sickness2").is(':checked')) {
+        sessionStorage.serious_sickness = $("#serious_sickness2").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#disease1").is(':checked')) {
+        sessionStorage.disease = $("#disease1").val();
+      } else if ($("#disease2").is(':checked')) {
+        sessionStorage.disease = $("#disease2").val();
+      }
+    });
+
+    //Form10
+    //==================================================================================================================================
+    $("#Form10").submit(function () {
+      if ($("#first_regis1").is(':checked')) {
+        sessionStorage.first_regis = $("#first_regis1").val();
+      } else if ($("#first_regis2").is(':checked')) {
+        sessionStorage.first_regis = $("#first_regis2").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#outside1").is(':checked')) {
+        sessionStorage.outside = $("#outside1").val();
+      } else if ($("#outside2").is(':checked')) {
+        sessionStorage.outside = $("#outside2").val();
+      }
+
+      if ($("#serious_sickness1").is(':checked')) {
+        sessionStorage.serious_sickness = $("#serious_sickness1").val();
+      } else if ($("#serious_sickness2").is(':checked')) {
+        sessionStorage.serious_sickness = $("#serious_sickness2").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#acquain1").is(':checked')) {
+        sessionStorage.acquain = $("#acquain1").val();
+      } else if ($("#acquain2").is(':checked')) {
+        sessionStorage.acquain = $("#acquain2").val();
+      }
+
+      if ($("#prison1").is(':checked')) {
+        sessionStorage.prison = $("#prison1").val();
+      } else if ($("#prison2").is(':checked')) {
+        sessionStorage.prison = $("#prison2").val();
+      }
+
+      //==================================================================================================================================
+
+      if ($("#my_club1").is(':checked')) {
+        sessionStorage.my_club = $("#my_club1").val();
+      } else if ($("#my_club2").is(':checked')) {
+        sessionStorage.my_club = $("#my_club2").val();
+      }
+    });
+  </script>
+
+
+
+
+
+
+
+
+  <script>
+    $(function () {
+
+      $.thprovinceset({
+        /*กำหนด class ของ DROPDOWN*/
+        eProvinceID: '.province',
+        eDistrictID: '.district',
+        eSubDistrictID: '.subdistrict',
+        eZipcode: '.zipcode',
+        /*กำหนดค่าให้ Dropdown*/
+        SelectProvince: "",
+        /*10 = กรุงเทพฯ*/
+        SelectDistrict: "",
+        SelectSubDistrict: "",
+      });
+    });
+  </script>
+
+  <script>
+    $(function () {
+
+      $.thprovinceset2({
+        /*กำหนด ID ของ DROPDOWN*/
+        eProvinceID2: ".province2",
+        eDistrictID2: ".district2",
+        eSubDistrictID2: ".subdistrict2",
+        eZipcode2: ".zipcode2",
+        /*กำหนดค่าให้ Dropdown*/
+        SelectProvince: "",
+        /*10 = กรุงเทพฯ*/
+        SelectDistrict: "",
+        SelectSubDistrict: "",
+      });
+    });
+  </script>
+
+  <!-- ซ่อน select
+  <script>
+    $("select[data-action=toggle]")
+      .on("change", function () {
+
+        var linkSet = $(this).find(":selected")
+          .attr("data-show");
+
+        if (linkSet) {
+          $("[data-links]").addClass("hidden");
+          $("[data-links=" + linkSet + "]")
+            .removeClass("hidden");
+
+        }
+      });
+  </script> -->
+
+  <script>
+    var my_title = jQuery('#my_title');
+    var select = this.value;
+    my_title.change(function () {
+      if ($(this).val() == 'นาย') {
+        $('.box').show("slow");
+      } else $('.box').hide("slow");
+    });
+
+     var parent_house = jQuery('#parent_house');
+    var select = this.value;
+    parent_house.change(function () {
+      if ($(this).val() == 'อาศัยผู้อื่น') {
+        $('.parent_house').show("slow");
+      } else $('.parent_house').hide("slow");
+    });
+
+    var my_marrital_status = jQuery('#my_marrital_status');
+    var select = this.value;
+    my_marrital_status.change(function () {
+      if ($(this).val() == 'สมรส') {
+        $('.my_marrital_status').show("slow");
+      } else $('.my_marrital_status').hide("slow");
+    });
+    
+    // Form5 ขับรถ ==================================================================
+
+ var driver_ability = jQuery('.driver_ability');
+    var radio = this.value;
+    driver_ability.change(function () {
+      if ($(this).val() == 'ได้') {
+        $('.driver_ability').show("slow");
+      } else $('.driver_ability').hide("slow");
+    });
+
+     var motorcycle_ability = jQuery('.motorcycle_ability');
+    var radio = this.value;
+    motorcycle_ability.change(function () {
+      if ($(this).val() == 'ได้') {
+        $('.motorcycle_ability').show("slow");
+      } else $('.motorcycle_ability').hide("slow");
+    });
+
+        // Form9 สุขภาพ ==================================================================
+   var serious_sickness = jQuery('.serious_sickness');
+    var radio = this.value;
+    serious_sickness.change(function () {
+      if ($(this).val() == 'เคย') {
+        $('.serious_sickness').show("slow");
+      } else $('.serious_sickness').hide("slow");
+    });
+
+     var disease = jQuery('.disease');
+    var radio = this.value;
+    disease.change(function () {
+      if ($(this).val() == 'มี') {
+        $('.disease').show("slow");
+      } else $('.disease').hide("slow");
+    });
+
+     // Form10 ==================================================================
+   var first_regis = jQuery('.first_regis');
+    var radio = this.value;
+    first_regis.change(function () {
+      if ($(this).val() == 'ไม่ใช่') {
+        $('.first_regis').show("slow");
+      } else $('.first_regis').hide("slow");
+    });
+
+     var outside = jQuery('.outside');
+    var radio = this.value;
+    outside.change(function () {
+      if ($(this).val() == 'ไม่ได้') {
+        $('.outside').show("slow");
+      } else $('.outside').hide("slow");
+    });
+
+     var acquain = jQuery('.acquain');
+    var radio = this.value;
+    acquain.change(function () {
+      if ($(this).val() == 'มี') {
+        $('.acquain').show("slow");
+      } else $('.acquain').hide("slow");
+    });
+
+     var prison = jQuery('.prison');
+    var radio = this.value;
+    prison.change(function () {
+      if ($(this).val() == 'เคย') {
+        $('.prison').show("slow");
+      } else $('.prison').hide("slow");
+    });
+    
+     var my_club = jQuery('.my_club');
+    var radio = this.value;
+    my_club.change(function () {
+      if ($(this).val() == 'เป็น') {
+        $('.my_club').show("slow");
+     
+      } else $('.my_club').hide("slow");
+    });
+
+  </script>
+
+
+</body>
+
+</html>
